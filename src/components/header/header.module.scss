@@ -1,0 +1,17 @@
+@import "../../scss/variables";
+
+.headerInfo {
+    background-color: $colorNeutralDark;
+    min-height: 2rem;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    span {
+        margin-right: 2rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

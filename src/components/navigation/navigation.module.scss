@@ -1,0 +1,35 @@
+@import "../../scss/variables";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  // align-items: baseline;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  div {
+    flex-basis: 100%;
+    align-self: flex-end;
+    &:nth-child(2) {
+      text-align: center;
+    }
+    &:nth-child(3) {
+      text-align: right;
+      a {
+        &:last-child {
+          color: $colorAccent;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    a {
+      margin: 0 2rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
