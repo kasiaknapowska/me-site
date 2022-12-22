@@ -2,6 +2,8 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { nav } from "./navigation.module.scss"
+import logo from "../../images/me-logo.png"
+
 
 const Navigation = () => {
   return (
@@ -12,14 +14,16 @@ const Navigation = () => {
       <Link>Cennik</Link>
       </div>
      <div>
-     <StaticImage
+     {/* <StaticImage
         src="../../images/me-logo.png"
         loading="eager"
-        width={140}
+        // width={140}
+        height={120}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="logo"
-      />
+      /> */}
+      <img style={{height: "120px"}} src={logo}/>
      </div>
       <div>
       <Link>Kontakt</Link>

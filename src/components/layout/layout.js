@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../header/header"
 import "./layout.scss"
+import Footer from "../footer/footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,11 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()} &middot; Built by KKnapowska with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      {/* <Footer/> */}
     </>
   )
 }
