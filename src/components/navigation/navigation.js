@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 import { Link } from "gatsby"
 import { contactData } from "../../data/contactData"
+import { navLinks, offerLinks } from "../../data/links"
 import {
   nav,
   hamburger,
@@ -10,18 +11,27 @@ import {
   open,
   navOpen,
   ph,
+  offer
 } from "./navigation.module.scss"
 import logo from "../../images/me-logo.png"
+import Submenu from "../submenu/submenu"
 
 const Navigation = () => {
   const { phone } = contactData
-  const [isOpen, setIsOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)
+
+function onHamburgerClick() {
+  setIsMenuOpen(!isMenuOpen)
+  setIsSubmenuOpen(false)
+}
+
   return (
     <>
       <div
         role="presentation"
-        onClick={() => setIsOpen(!isOpen)}
-        className={`${hamburger} ${isOpen && open}`}
+        onClick={() => onHamburgerClick()}
+        className={`${hamburger} ${isMenuOpen && open}`}
       >
         <span></span>
         <span></span>
@@ -31,11 +41,11 @@ const Navigation = () => {
       <Link className={logoMobile} to="/">
         <img src={logo} />
       </Link>
-      <nav className={`${!isOpen && "container"} ${nav} ${isOpen && navOpen}`}>
+      <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && navOpen}`}>
         <div>
-          <Link>O nas</Link>
-          <Link>Oferta</Link>
-          <Link>Cennik</Link>
+          <Link to="/o-nas">O nas</Link>
+          <span className={offer} onClick={() => setIsSubmenuOpen(true)}>Oferta</span>
+          <Link to="/cennik">Cennik</Link>
         </div>
         <div>
           <Link className={logoDesktop} to="/">
@@ -43,13 +53,36 @@ const Navigation = () => {
           </Link>
         </div>
         <div>
-          <Link>Cennik</Link>
-          <Link>Kontakt</Link>
+          <Link to="/cennik">Cennik</Link>
+          <Link to="/kontakt">Kontakt</Link>
           <a className={ph} href={`tel:${phone}`}>
             Umów wizytę {phone}
           </a>
         </div>
       </nav>
+      {isSubmenuOpen && 
+      <Submenu setisSubmenuOpen={setIsSubmenuOpen}/>
+      }
+      {/* <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && navOpen}`}>
+        <div>
+          {navLinks.slice(0, 3).map(link => (
+            <Link to={link.url}>{link.text}</Link>
+          ))}
+        </div>
+        <div>
+          <Link className={logoDesktop} to="/">
+            <img src={logo} />
+          </Link>
+        </div>
+        <div>
+          {navLinks.slice(2).map(link => (
+            <Link to={link.url}>{link.text}</Link>
+          ))}
+          <a className={ph} href={`tel:${phone}`}>
+            Umów wizytę {phone}
+          </a>
+        </div>
+      </nav> */}
     </>
   )
 }
