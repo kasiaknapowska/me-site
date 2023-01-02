@@ -7,7 +7,7 @@ const Header = () => {
   const { address, email, phone } = contactData
 
   return (
-    <header>
+    <>
       <div className={headerInfo}>
         <div className="container">
           {" "}
@@ -15,13 +15,13 @@ const Header = () => {
           <span>
             <a href={`mailto:${email}`}>{email}</a>
           </span>
-          {/* <span>
+          <span>
           <a href={`tel:${phone}`}>{phone}</a>
-        </span> */}
+        </span>
         </div>
       </div>
       <Navigation/>
-    </header>
+    </>
   )
 }
 

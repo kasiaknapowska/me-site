@@ -1,38 +1,185 @@
 @import "../../scss/variables";
 
-@media screen and ($desktop) {
-    .nav {
-        position: sticky;
-        display: flex;
-        justify-content: space-between;
-        // align-items: baseline;
-        padding: 2rem 0;
-        text-transform: uppercase;
-        div {
-          flex-basis: 100%;
-          align-self: flex-end;
-          &:nth-child(2) {
-            text-align: center;
-          }
-          &:nth-child(3) {
-            text-align: right;
-            a {
-              &:last-child {
-                color: $colorAccent;
-                text-transform: capitalize;
-              }
-            }
-          }
-      
-          a {
-            margin: 0 2rem;
-            &:first-child {
-              margin-left: 0;
-            }
-            &:last-child {
-              margin-right: 0;
-            }
-          }
+.nav {
+  display: none;
+}
+
+.logoMobile {
+  display: block;
+  width: 100%;
+  text-align: center;
+  img {
+    @media screen and ($mobile) {
+      margin-top: 5rem;
+    }
+    margin-top: $space5;
+    height: 120px;
+  }
+}
+
+.hamburger {
+  width: 2.25rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 5%;
+  margin: $space5 $space3;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 4;
+  span {
+    display: block;
+    position: absolute;
+    height: 0.2rem;
+    width: 100%;
+    background: $colorSecondary;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    &:nth-child(1) {
+      top: 0px;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 0.8rem;
+    }
+    &:nth-child(4) {
+      top: 1.6rem;
+    }
+  }
+
+  &.open {
+    span {
+      background-color: white;
+    }
+    span:nth-child(1) {
+      top: 0.8rem;
+      width: 0%;
+      left: 50%;
+    }
+    span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    span:nth-child(4) {
+      top: 0.8rem;
+      width: 0%;
+      left: 50%;
+    }
+  }
+}
+
+.navOpen {
+  display: block;
+  background-color: $colorPrimary;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 6rem 0;
+
+  div {
+    margin: $space4;
+    display: flex;
+    flex-direction: column;
+    gap: $space6;
+  }
+  .ph,
+  .logoDesktop {
+    display: none;
+  }
+}
+
+.nav {
+  div:first-child {
+    a:last-of-type {
+      display: none;
+    }
+  }
+}
+
+@media screen and ($tablet) {
+  .nav {
+    position: sticky;
+    display: flex;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    div {
+      flex-basis: 100%;
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-around;
+
+      &:last-child {
+        a:last-of-type {
+          display: none;
         }
       }
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .logoDesktop img {
+    height: 120px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .logoMobile {
+    display: none;
+  }
+}
+@media screen and ($desktop) {
+  .nav {
+    div {
+      justify-content: space-between;
+      &:first-child {
+        a:last-of-type {
+          display: block;
+        }
+      }
+      &:last-child {
+        a:first-of-type {
+          display: none;
+        }
+        a:last-of-type {
+          display: block;
+        }
+      }
+      &:nth-child(3) {
+        a:last-child {
+          color: $colorAccent;
+          text-transform: none;
+        }
+      }
+    }
+  }
 }

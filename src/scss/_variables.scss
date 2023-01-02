@@ -7,12 +7,23 @@ $colorNeutralDark: #1A1A1A;
 $colorNeutralLight: #E0E0E0;
 $colorError: #ad0071;
 
+//spaces
+$space1: 0.25rem;
+$space2: 0.5rem;
+$space3: 1rem;
+$space4: 1.5rem;
+$space5: 2rem;
+$space6: 3rem;
+$sizeContent: 1080px;
+$sizeGutter: $space4;
+$sizeGap: $space6;
 
 //fonts
 $lato: 'Lato', sans-serif;
 $playfair: 'Playfair Display', serif;
 
 //breakpoints
+$mobile: "max-Width: 360px";
 $tablet_s: "min-width: 500px";
 $tablet: "min-width: 700px";
 $desktop_s: "min-width: 1000px";
