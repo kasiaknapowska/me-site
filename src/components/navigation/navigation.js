@@ -9,7 +9,7 @@ import {
   logoMobile,
   logoDesktop,
   open,
-  navOpen,
+  menuOpen,
   ph,
   offer
 } from "./navigation.module.scss"
@@ -41,7 +41,7 @@ function onHamburgerClick() {
       <Link className={logoMobile} to="/">
         <img src={logo} />
       </Link>
-      <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && navOpen}`}>
+      <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && menuOpen}`}>
         <div>
           <Link to="/o-nas">O nas</Link>
           <span className={offer} onClick={() => setIsSubmenuOpen(true)}>Oferta</span>
@@ -63,7 +63,7 @@ function onHamburgerClick() {
       {isSubmenuOpen && 
       <Submenu setisSubmenuOpen={setIsSubmenuOpen}/>
       }
-      {/* <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && navOpen}`}>
+      {/* <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && menuOpen}`}>
         <div>
           {navLinks.slice(0, 3).map(link => (
             <Link to={link.url}>{link.text}</Link>

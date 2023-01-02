@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
+import Hero from "../components/hero/hero"
 
 const links = [
   {
@@ -71,6 +72,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
+    <Hero/>
     {/* <div className={styles.textCenter}>
     
       <h1>

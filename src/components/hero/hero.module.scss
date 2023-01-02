@@ -1,0 +1,17 @@
+@import "../../scss/variables";
+
+.heroContainer {
+    width: 100%;
+    background-color: $colorSecondary;
+    height: 100vh;
+}
+
+@media screen and ($desktop) {
+    .heroContainer {
+        height: calc(100vh - 2rem - 2rem * 2 - 120px);
+        display: flex;
+        div {
+            flex-basis: 50%;
+        }
+    }
+}

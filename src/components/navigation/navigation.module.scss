@@ -12,7 +12,8 @@
     @media screen and ($mobile) {
       margin-top: 5rem;
     }
-    margin-top: $space5;
+    margin: $space5;
+    margin-bottom: $sizeGap;
     height: 120px;
   }
 }
@@ -92,7 +93,7 @@
   }
 }
 
-.navOpen {
+.menuOpen {
   display: block;
   background-color: $colorPrimary;
   position: absolute;
@@ -104,10 +105,10 @@
   text-align: center;
   color: white;
   text-transform: uppercase;
-  padding: 6rem 0;
+  padding: calc($space6 * 2 + 2rem) 0;
 
   div {
-    margin: $space4;
+    margin-bottom: $space4;
     display: flex;
     flex-direction: column;
     gap: $space6;
