@@ -16,12 +16,14 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: $space5;
+    align-items: center;
+    row-gap: $space5;
   }
 
   .submenuCol {
     display: flex;
     flex-direction: column;
+    width: 200px;
     gap: $space5;
   }
   .arrow {
@@ -66,9 +68,6 @@
       opacity: 90%;
       margin: 0 calc(100% / 2 - 30px);
       margin-bottom: calc($space6 + $space3);
-    }
-    .submenuCol {
-      max-width: 200px;
     }
     a {
       line-height: 150%;
