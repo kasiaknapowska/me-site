@@ -1,0 +1,21 @@
+@import "../../scss/variables";
+
+.iconsContainer {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  background-color: $colorNeutralLight;
+  .iconButton {
+    background-color: $colorNeutralDark;
+    flex-basis: calc(50% - 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and ($tablet) {
+    display: none;
+  }
+}
