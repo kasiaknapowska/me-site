@@ -9,7 +9,7 @@
   }
   .heroImg {
     width: 100%;
-    height: 100%;
+    height: 50vh;
   }
 
   .heroTextContainer {
@@ -34,7 +34,7 @@
         margin:0 5%;
     }
     .heroImg {
-        max-height: 50vh;
+        height: 60vh;
       }
 }
 // @media screen and ($tablet_s) {
@@ -54,8 +54,13 @@
     flex-direction: row-reverse;
     div {
       flex-basis: 50%;
+      &.heroImg {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
+  
   
   .heroTextContainer {
     max-width: 400px;

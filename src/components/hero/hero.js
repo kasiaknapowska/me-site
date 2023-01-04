@@ -7,6 +7,7 @@ import { heroData } from '../../data/heroData'
 import FBicon from "../../images/icon-color-fb.svg"
 import SocialMedia from '../socialMedia/socialMedia'
 import SlidesNav from '../slidesNav/slidesNav'
+import SlidesDots from '../slidesDots/slidesDots'
 const Hero = () => {
   const heroImages = useStaticQuery(graphql`
   {
@@ -30,7 +31,6 @@ const [currentIndex, setCurrentIndex] = useState(0)
 const images = heroImages.allFile.nodes.map(el => getImage(el))
 // const image = heroImages.allFile.nodes[0].childImageSharp.gatsbyImageData
 const indexes = heroImages.allFile.nodes.map(el => el.name)
-// const index = heroImages.allFile.nodes[0].name
 console.log(images)
 console.log(indexes)
 
@@ -56,13 +56,14 @@ const goToSlide = (slideIndex) => {
     <div className={imgContainer}>
       <GatsbyImage image={images[currentIndex]} alt="" className={heroImg}/>
       <SlidesNav goToNext={goToNext} goToPrevious={goToPrevious}/>
+      <SlidesDots goToSlide={goToSlide} images={images} currentIndex={currentIndex}/>
     </div>
     <div className={heroTextContainer}>
       <h1>{heroData[currentIndex].title}</h1>
       <p>{heroData[currentIndex].text}</p>
       
     </div>
-   <Link className={`btn btnPrimary ${btnHero}`} to="/">sprawdź</Link>
+   <Link className={`btn btnPrimary ${btnHero}`} to={heroData[currentIndex].url}>sprawdź</Link>
    <SocialMedia type="side"/>
     </section>
   )

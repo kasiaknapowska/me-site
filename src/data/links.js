@@ -17,7 +17,7 @@ export const navLinks = [
     { text: "nawilżanie skóry", url: "nawilzanie-skory" },
     { text: "leczenie nadpotliwości", url: "leczenie-nadpotliwosci" },
     { text: "lipoliza - usuwanie tłuszczu", url: "lipoliza" },
-    { text: "zagęszczanie włosów", url: "zageszczanie wlosow" },
+    { text: "zagęszczanie włosów", url: "zageszczanie-wlosow" },
     { text: "zabiegi laserowe", url: "zabiegi-laserowe" },
     { text: "GENEO", url: "geneo" },
   ]
