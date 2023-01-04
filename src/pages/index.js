@@ -73,8 +73,42 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <Hero />
-    <section>
-      <div className="container">Gallery</div>
+    <section
+      style={{
+        width: "100%",
+        minHeight: "100vh",
+        padding: "6rem 0",
+        backgroundColor: "rgba(189, 109, 160, 0.2)",
+      }}
+    >
+      <div
+        className="container"
+        style={{ display: "flex", flexDirection:"column", alignItems: "center" }}
+      >
+        <div>
+        <h2 >Dlaczego warto wybrać nasz gabinet?</h2>
+        <p>
+          Gabinet Medycyny Estetycznej Borczyk zlokalizowany jest na terenie
+          Kliniki Implantologii i Stomatologii Estetycznej R. Borczyk w
+          Katowicach. Kompleksowo dbamy nie tylko o uśmiech naszych Pacjentów,
+          ale również o ich młody wygląd, zdrowie i samopoczucie. W naszym
+          gabinecie wykonujemy pełen wachlarz zabiegów z zakresu medycyny
+          estetycznej.
+        </p>
+        <p>
+          Aby zapewnić doskonałe efekty leczenia wyposażyliśmy gabinet w
+          nowoczesny sprzęt m.in laser frakcyjny, urządzenie do mezoterapii
+          podciśnieniowej Vital Injector 2, Dermapen, PELLEVE, urządzenie do
+          stymulacji mięśni. Zabiegi wykonywane sa przez wykwalifikowanych
+          lekarzy medycyny estetycznej, więc możesz mieć pewność, że jesteś w
+          dobrych rękach.
+        </p>
+        <p>
+          Dla Twojego komforu zabiegi wykonujemy w znieczuleniu miejscowym.
+          Możesz również skorzystać z podtlenku azotu lub znieczulenia ogólnego.
+        </p>
+        </div>
+      </div>
     </section>
     {/* <div className={styles.textCenter}>
     

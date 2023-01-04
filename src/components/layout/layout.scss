@@ -12,6 +12,13 @@ font-family: $lato;
 h1 {
   font-family: $playfair;
   font-size: 3rem;
+  color: $colorNeutralDark;
+  margin-bottom: $space3;
+}
+h2 {
+  font-family: $lato;
+  font-size: 1.5rem;
+  color: $colorNeutralDark;
   margin-bottom: $space3;
 }
 p {
@@ -19,6 +26,7 @@ p {
   line-height: 150%;
   color: $colorNeutralDark;
   padding: 1rem 0;
+  max-width: 50rem;
 }
 a {
   text-decoration: none;
@@ -29,7 +37,7 @@ a {
   width: 90%;
   margin: 0 auto;
   @media screen and ($tablet) {
-      width: 90%;
+      width: 80%;
     }
     @media screen and ($desktop) {
       max-width: $sizeContent;
