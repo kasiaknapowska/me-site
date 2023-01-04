@@ -9,6 +9,17 @@
 body {
 font-family: $lato;
 }
+h1 {
+  font-family: $playfair;
+  font-size: 3rem;
+  margin-bottom: $space3;
+}
+p {
+  font-size: 1rem;
+  line-height: 150%;
+  color: $colorNeutralDark;
+  padding: 1rem 0;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -23,6 +34,19 @@ a {
     @media screen and ($desktop) {
       max-width: $sizeContent;
     }
+}
+.btn {
+  display: inline-block;
+  padding: $space3 $space4;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  font-family: $lato;
+  cursor: pointer;
+}
+.btnPrimary {
+  background-color: $colorAccent;
+  color: white;
 }
 // :root {
 //   --border-radius: 4px;

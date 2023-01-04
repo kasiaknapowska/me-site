@@ -1,17 +1,67 @@
 @import "../../scss/variables";
 
 .heroContainer {
+  width: 100%;
+  //   background-color: $colorSecondary;
+  position: relative;
+  .heroImg {
     width: 100%;
-    background-color: $colorSecondary;
-    height: 100vh;
-}
+    height: 100%;
+  }
 
-@media screen and ($desktop) {
-    .heroContainer {
-        height: calc(100vh - 2rem - 2rem * 2 - 120px);
-        display: flex;
-        div {
-            flex-basis: 50%;
-        }
+  .heroTextContainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: $space6 0 $space4 0;
+    
+  }
+  .btnHero {
+    padding: 1.25rem;
+  }
+}
+@media screen and (max-width: 500px) {
+    .btnHero {
+        width: 90%;
     }
+    
+}
+@media screen and (max-width: 1100px) {
+    .btnHero {
+        margin-left: 5%;
+    }
+    .heroImg {
+        max-height: 50vh;
+      }
+}
+@media screen and ($tablet_s) {
+    .btnHero {
+      width: 40%;
+    }
+  }
+@media screen and ($tablet) {
+  .heroTextContainer {
+    width: 60%;
+  }
+}
+@media screen and ($desktop) {
+  .heroContainer {
+    height: calc(100vh - 2rem - 2rem - 4rem - 120px);
+    display: flex;
+    flex-direction: row-reverse;
+    div {
+      flex-basis: 50%;
+    }
+  }
+  
+  .heroTextContainer {
+    max-width: 400px;
+  }
+  .btnHero {
+    margin-left: 0%;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    padding: 1.25rem;
+  }
 }
