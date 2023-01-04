@@ -11,10 +11,12 @@ import {
   open,
   menuOpen,
   ph,
-  offer
+  offer,
+  menuLink
 } from "./navigation.module.scss"
 import logo from "../../images/me-logo.png"
 import Submenu from "../submenu/submenu"
+import SocialMedia from "../socialMedia/socialMedia"
 
 const Navigation = () => {
   const { phone } = contactData
@@ -43,9 +45,9 @@ function onHamburgerClick() {
       </Link>
       <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && menuOpen}`}>
         <div>
-          <Link to="/o-nas">O nas</Link>
+          <Link className={menuLink} to="/o-nas">O nas</Link>
           <span className={offer} onClick={() => setIsSubmenuOpen(true)}>Oferta</span>
-          <Link to="/cennik">Cennik</Link>
+          <Link className={menuLink} to="/cennik">Cennik</Link>
         </div>
         <div>
           <Link className={logoDesktop} to="/">
@@ -53,12 +55,14 @@ function onHamburgerClick() {
           </Link>
         </div>
         <div>
-          <Link to="/cennik">Cennik</Link>
-          <Link to="/kontakt">Kontakt</Link>
+          <Link className={menuLink} to="/cennik">Cennik</Link>
+          <Link className={menuLink} to="/kontakt">Kontakt</Link>
           <a className={ph} href={`tel:${phone}`}>
             Umów wizytę {phone}
           </a>
+          
         </div>
+        <SocialMedia type="menu"/>
       </nav>
       {isSubmenuOpen && 
       <Submenu setisSubmenuOpen={setIsSubmenuOpen}/>

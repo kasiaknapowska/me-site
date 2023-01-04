@@ -4,19 +4,21 @@
   position: absolute;
   z-index: 10;
   width: 100%;
-  min-height: 100vh;
+  height: 200vh;
   top: 0;
   background-color: $colorNeutralDark;
   padding: $space6;
   padding-top: calc($space6 * 2 + 2rem);
+  padding-bottom: calc($space6 * 2);
   a {
     color: white;
   }
   section {
+    // position: fixed;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     row-gap: $space5;
   }
 
@@ -31,6 +33,7 @@
     align-items: center;
     position: absolute;
     top: 2.5rem;
+    left: 5%;
     color: white;
     margin-bottom: $space6;
     cursor: pointer;
@@ -57,6 +60,7 @@
 
   @media screen and ($tablet) {
     padding-top: 64px;
+    position: fixed;
     section {
       flex-direction: row;
       justify-content: center;

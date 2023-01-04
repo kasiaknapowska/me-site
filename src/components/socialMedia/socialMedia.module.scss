@@ -1,0 +1,43 @@
+@import "../../scss/variables";
+
+
+.smSideIcons {
+    display: none;
+  }
+  .smMenuIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: $space4;
+    a {
+        margin: $space6 0;
+    }
+  }
+  .smSideIcons a {
+    display: inline-block;
+  }
+
+.smIcon {
+    height: 2rem;
+    position: relative;
+    z-index: 5;
+    margin: $space3 $sizeGutter;
+    cursor: pointer;
+  }
+@media screen and ($tablet) {
+    div.smMenuIcons {
+        display: none;
+      }
+}
+  @media screen and ($desktop) {
+    .smSideIcons {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: $space3;
+        left: 0;
+      }
+      
+  }

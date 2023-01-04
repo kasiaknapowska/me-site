@@ -3,7 +3,8 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import {heroContainer, heroImg, heroTextContainer, btnHero} from "./hero.module.scss"
 import { heroData } from '../../data/heroData'
-
+import FBicon from "../../images/icon-color-fb.svg"
+import SocialMedia from '../socialMedia/socialMedia'
 const Hero = () => {
 
   const heroImages = useStaticQuery(graphql`
@@ -39,7 +40,7 @@ console.log(indexes)
       
     </div>
    <Link className={`btn btnPrimary ${btnHero}`} to="/">sprawdź</Link>
-    
+   <SocialMedia type="side"/>
     </section>
   )
 }
