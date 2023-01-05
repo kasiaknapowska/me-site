@@ -15,13 +15,13 @@ const Submenu = ({ setisSubmenuOpen }) => {
       <section>
       <div className={submenuCol}>
         {offerLinks.slice(0, offerLinks.length / 2).map(link => (
-          <Link key={link.text} to={link.url}>{link.text}</Link>
+          <Link key={link.text} to={`/${link.url}`}>{link.text}</Link>
         ))}
       </div>
       <div className={submenuCol}>
         {" "}
         {offerLinks.slice(offerLinks.length / 2).map(link => (
-          <Link key={link.text} to={link.url}>{link.text}</Link>
+          <Link key={link.text} to={`/${link.url}`}>{link.text}</Link>
         ))}
       </div>
       </section>

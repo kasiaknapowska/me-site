@@ -7,8 +7,7 @@
   padding: 0;
 }
 body {
-font-family: $lato;
-
+  font-family: $lato;
 }
 h1 {
   font-family: $playfair;
@@ -38,15 +37,34 @@ a {
     outline-width: 0;
   }
 }
+
+ul {
+  list-style: none;
+  margin: $space3 0;
+  li {
+    padding: $space1 0;
+  }
+  li::before {
+    content: "\25A0";
+    color: $colorPrimary;
+    width: 1rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+    position: relative;
+    left: -0.5rem;
+    bottom: 0.1rem;
+  }
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
   @media screen and ($tablet) {
-      width: 80%;
-    }
-    @media screen and ($desktop) {
-      max-width: $sizeContent;
-    }
+    width: 80%;
+  }
+  @media screen and ($desktop) {
+    max-width: $sizeContent;
+  }
 }
 .flexContainer {
   display: flex;
@@ -68,8 +86,12 @@ a {
 section {
   padding-top: $space6;
 }
-
-
+.pageContainer {
+  padding: $space6 0;
+  p {
+    max-width: 100%;
+  }
+}
 
 /* FORM STYLES START */
 
@@ -128,7 +150,7 @@ textarea:focus {
 
 .checkbox > div,
 .radio > div {
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 120%;
   text-transform: initial;
 }
@@ -160,7 +182,6 @@ textarea:focus {
   cursor: pointer;
   margin-right: $space3;
 }
-
 
 .checkbox input:checked + span {
   background-color: $colorPrimary;
