@@ -6,6 +6,7 @@ import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
 import Hero from "../components/hero/hero"
+import Form from "../components/form/form"
 
 const links = [
   {
@@ -78,7 +79,7 @@ const IndexPage = () => (
         width: "100%",
         minHeight: "100vh",
         padding: "8rem 0",
-        backgroundColor: "rgba(189, 109, 160, 0.2)",
+        backgroundColor: "rgba(189, 109, 160, 0.1)",
         
       }}
     >
@@ -118,6 +119,12 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
+    </section>
+    <section className="container" style={{padding: "6rem 0", display: "flex", justifyContent: "center"}}>
+    <div>
+    <h2>Masz pytania? Wypełnij formularz</h2>
+    <Form/>
+    </div>
     </section>
     {/* <div className={styles.textCenter}>
     
