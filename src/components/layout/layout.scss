@@ -13,19 +13,19 @@ h1 {
   font-family: $playfair;
   font-size: 3rem;
   color: $colorNeutralDark;
-  margin-bottom: $space3;
+  padding-bottom: $space3;
 }
 h2 {
   font-family: $lato;
   font-size: 1.5rem;
   color: $colorNeutralDark;
-  margin-bottom: $space3;
+  padding-bottom: $space3;
 }
 p {
   font-size: 1rem;
   line-height: 150%;
   color: $colorNeutralDark;
-  padding: 1rem 0;
+  margin: 1rem 0;
   max-width: 50rem;
 }
 a {

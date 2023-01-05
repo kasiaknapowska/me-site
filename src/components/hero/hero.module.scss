@@ -13,40 +13,38 @@
   }
 
   .heroTextContainer {
-    width: 90%;
-    margin: 0 auto;
-    padding: $space6 0 $space5 0;
-    
+    // padding: $space6 0 $space5 0;
+    padding-top: $space6;
+    padding-bottom: $space5;
   }
   .btnHero {
     padding: 1.25rem 4rem;
     height: 56px;
   }
 }
-// @media screen and (max-width: 500px) {
-//     .btnHero {
-//         width: 50%;
-//     }
-    
-// }
-@media screen and (max-width: 1100px) {
-    .btnHero {
-        margin:0 5%;
-    }
-    .heroImg {
-        height: 60vh;
-      }
-}
-// @media screen and ($tablet_s) {
-//     .btnHero {
-//       width: 40%;
-//     }
-//   }
-@media screen and ($tablet) {
-  .heroTextContainer {
-    width: 60%;
+@media screen and (max-width: 700px) {
+  .btnHero {
+    margin: 0 5%;
+    margin-bottom: 4rem;
   }
 }
+@media screen and (max-width: 1100px) {
+  .heroImg {
+    height: 60vh;
+  }
+}
+@media screen and ($tablet) {
+  .btnHero {
+    margin: 0 10%;
+    margin-bottom: 4rem;
+  }
+}
+
+// @media screen and ($tablet) {
+//   .heroTextContainer {
+//     width: 60%;
+//   }
+// }
 @media screen and ($desktop) {
   .heroContainer {
     height: calc(100vh - 2rem - 2rem - 2rem - 120px);
@@ -60,17 +58,26 @@
       }
     }
   }
-  
-  
+
   .heroTextContainer {
-    max-width: 400px;
+    // max-width: 400px;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   .btnHero {
+    margin-bottom: 0;
     margin-left: 0%;
     width: 25%;
     position: absolute;
     bottom: 0;
     left: 25%;
     padding: 1.25rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .heroTextContainer {
+    padding-left: calc((100vw - 1100px) / 2);
+    padding-right: calc((100vw - 1100px) / 2);
   }
 }

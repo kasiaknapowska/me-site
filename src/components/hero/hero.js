@@ -58,7 +58,7 @@ const goToSlide = (slideIndex) => {
       <SlidesNav goToNext={goToNext} goToPrevious={goToPrevious}/>
       <SlidesDots goToSlide={goToSlide} images={images} currentIndex={currentIndex}/>
     </div>
-    <div className={heroTextContainer}>
+    <div className={`container ${heroTextContainer}`}>
       <h1>{heroData[currentIndex].title}</h1>
       <p>{heroData[currentIndex].text}</p>
       
