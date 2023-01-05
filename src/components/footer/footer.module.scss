@@ -2,7 +2,6 @@
 
 .footer {
   background-color: $colorNeutralDark;
-//   min-height: 500px;
   padding: $space6 0;
   padding-bottom: 8rem;
   position: relative;
@@ -23,11 +22,27 @@
       line-height: 140%;
     }
   }
+.footerLinksContainer {
+    display: none;
+    @media screen and ($desktop) {
+    display: flex;
+    gap: $space6;
+    align-items: center;
+    }
+}
+.footerLink {
+    color: $colorWhite;
+    cursor: pointer;
+    text-transform: uppercase; 
+}
 
   .footerBottom {
     font-size: 0.8rem;
     position: absolute;
     bottom: 2rem;
+    a {
+        cursor: pointer;
+    }
   }
   .footerContact {
     margin: $space5 0;

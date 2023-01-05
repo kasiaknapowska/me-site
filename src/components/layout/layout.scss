@@ -34,6 +34,9 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  &:active {
+    outline-width: 0;
+  }
 }
 .container {
   width: 90%;
@@ -44,6 +47,10 @@ a {
     @media screen and ($desktop) {
       max-width: $sizeContent;
     }
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
 }
 .btn {
   display: inline-block;

@@ -1,24 +1,43 @@
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import * as React from "react"
 import logo from "../../images/me-logo-diament-white.png"
 import Contact from "../contact/contact"
 import SocialMedia from "../socialMedia/socialMedia"
+import Submenu from "../submenu/submenu"
 import {
   footer,
   logoContainer,
-  lg,
+  footerLinksContainer,
+  footerLink,
   footerBottom,
   footerContact,
 } from "./footer.module.scss"
 const Footer = () => {
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)
   return (
     <>
       <footer className={footer}>
         <div className="container">
-          <Link to="/" className={logoContainer}>
-            <img src={logo} />
-            <span>Medycyna estetyczna borczyk</span>
-          </Link>
+          <div className="flexContainer">
+            <Link to="/" className={logoContainer}>
+              <img src={logo} />
+              <span>Medycyna estetyczna borczyk</span>
+            </Link>
+            <div className={footerLinksContainer}>
+              <Link className={footerLink} to="/o-nas">
+                O nas
+              </Link>
+              <span
+                className={footerLink}
+                onClick={() => setIsSubmenuOpen(true)}
+              >
+                Zabiegi
+              </span>
+              <Link className={footerLink} to="/cennik">
+                Cennik
+              </Link>
+            </div>
+          </div>
 
           <section className={footerContact}>
             <Contact />
@@ -37,6 +56,9 @@ const Footer = () => {
           </p>
         </div>
       </footer>
+      {isSubmenuOpen && 
+      <Submenu setisSubmenuOpen={setIsSubmenuOpen}/>
+      }
     </>
   )
 }
