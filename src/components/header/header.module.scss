@@ -1,15 +1,15 @@
 @import "../../scss/variables";
 
 
-.headerInfo {
+.headerContact {
     display: none;
 }
 
 @media screen and ($tablet) {
-    .headerInfo {
+    .headerContact {
         background-color: $colorNeutralDark;
         height: 2rem;
-        color: white;
+        color: $colorWhite;
         font-size: .9rem;
         display: flex;
         align-items: center;
@@ -21,7 +21,7 @@
     } 
 }
 @media screen and ($desktop) {
-    .headerInfo {
+    .headerContact {
         span:nth-child(2) {
             margin-right: 0;
         }

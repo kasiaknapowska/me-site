@@ -1,0 +1,39 @@
+@import "../../scss/variables";
+
+.footer {
+  background-color: $colorNeutralDark;
+//   min-height: 500px;
+  padding: $space6 0;
+  padding-bottom: 8rem;
+  position: relative;
+  p,
+  span {
+    color: $colorWhite;
+  }
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: $space3;
+    img {
+      height: 48px;
+      opacity: 90%;
+    }
+    span {
+      text-transform: uppercase;
+      line-height: 140%;
+    }
+  }
+
+  .footerBottom {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 2rem;
+  }
+  .footerContact {
+    margin: $space5 0;
+    span {
+      display: block;
+      margin-bottom: $space3;
+    }
+  }
+}

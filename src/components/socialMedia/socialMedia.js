@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {smIcon, smSideIcons, smMenuIcons} from "./socialMedia.module.scss"
+import {smIcon, smSideIcons, smMenuIcons, smFooterIcons} from "./socialMedia.module.scss"
 import IconFB from "../../images/icon-color-fb.svg"
 import IconIN from "../../images/icon-color-insta.svg"
 import IconFBwhite from "../../images/icon-fb.svg"
@@ -8,7 +8,7 @@ import IconINwhite from "../../images/icon-insta.svg"
 
 const SocialMedia = ({type}) => {
   return (
-    <div className={`${type === "side" && smSideIcons} ${type === "menu" && smMenuIcons}` }>
+    <div className={`${type === "side" && smSideIcons} ${type === "menu" && smMenuIcons} ${type === "footer" && smFooterIcons}` }>
       <a
         href="https://pl-pl.facebook.com/MedycynaEstetycznaBorczyk/"
         target="blank"

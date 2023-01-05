@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <Header />
       <main>{children}</main>
       <MobileContact/>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }

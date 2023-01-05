@@ -1,25 +1,17 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { contactData } from "../../data/contactData"
-import { headerInfo } from "./header.module.scss"
+import { headerContact } from "./header.module.scss"
 import Navigation from "../navigation/navigation"
+import Contact from "../contact/contact"
 const Header = () => {
-  const { address, email, phone } = contactData
+
 
   return (
     <>
-      <div className={headerInfo}>
+      <header className={headerContact}>
         <div className="container">
-          {" "}
-          <span>{address}</span>
-          <span>
-            <a href={`mailto:${email}`}>{email}</a>
-          </span>
-          <span>
-          <a href={`tel:${phone}`}>{phone}</a>
-        </span>
+        <Contact/>
         </div>
-      </div>
+      </header>
       <Navigation/>
     </>
   )
