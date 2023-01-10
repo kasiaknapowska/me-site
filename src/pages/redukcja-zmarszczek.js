@@ -14,17 +14,17 @@ const RedukcjaZmarszczek = () => (
         <h2>Jak skutecznie usunąć zmarszczki?</h2>
         <p>
           W zależności od rodzaju, głębokości i lokalizacji zmarszczek do ich
-          usuwania wykorzystywane są 3 rodzaje preparatów, każdorazowo
-          dobierane są one indywidualnie do potrzeb skóry Pacjenta:
-          <ul>
-            <li>
-              Kompleks liftingująco-przeciwzmarszczkowy na bazie kwasu
-              hialuronowego i peptydów,
-            </li>
-            <li>Biostymulator tkankowy na bazie polinukleotydów,</li>
-            <li>Preparaty na bazie specjalistycznej toksyny.</li>
-          </ul>
+          usuwania wykorzystywane są 3 rodzaje preparatów, każdorazowo dobierane
+          są one indywidualnie do potrzeb skóry Pacjenta:{" "}
         </p>
+        <ul>
+          <li>
+            Kompleks liftingująco-przeciwzmarszczkowy na bazie kwasu
+            hialuronowego i peptydów,
+          </li>
+          <li>Biostymulator tkankowy na bazie polinukleotydów,</li>
+          <li>Preparaty na bazie specjalistycznej toksyny.</li>
+        </ul>
       </section>
       <section>
         <h2>

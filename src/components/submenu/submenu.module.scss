@@ -1,32 +1,45 @@
+@use "../../scss/placeholders";
 @import "../../scss/variables";
+
 
 .submenu {
   position: absolute;
   z-index: 10;
   width: 100%;
-  height: 200vh;
+  height: 100vh;
   top: 0;
   background-color: $colorNeutralDark;
   padding: $space6;
+  padding-right: $space5;
   padding-top: calc($space6 * 2 + 2rem);
   padding-bottom: calc($space6 * 2);
+  @media screen and (max-width: 280px) {
+
+  padding-left: $space3;
+  padding-right: $space3;
+}
   a {
     color: white;
   }
-  section {
-    // position: fixed;
+
+  .submenuList {
     width: 100%;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     row-gap: $space5;
+    height: 75vh;
+    padding-top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    // direction: rtl;
+      @extend %scrollbar;
   }
-
   .submenuCol {
     display: flex;
     flex-direction: column;
     width: 200px;
     gap: $space5;
+    
   }
   .arrow {
     display: flex;
@@ -60,11 +73,13 @@
 
   @media screen and ($tablet) {
     padding-top: 64px;
+    padding-right: $space6;
     position: fixed;
-    section {
+    .submenuList {
       flex-direction: row;
       justify-content: center;
       gap: calc($sizeGap * 2);
+      overflow: auto;
     }
     .lg {
       display: block;

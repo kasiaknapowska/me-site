@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { contactData } from "../../data/contactData"
 import { navLinks, offerLinks } from "../../data/links"
@@ -18,15 +18,27 @@ import logo from "../../images/me-logo.png"
 import Submenu from "../submenu/submenu"
 import SocialMedia from "../socialMedia/socialMedia"
 
+// const isBrowser = typeof window !== "undefined"
+
 const Navigation = () => {
+
   const { phone } = contactData
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)
+
 
 function onHamburgerClick() {
   setIsMenuOpen(!isMenuOpen)
   setIsSubmenuOpen(false)
 }
+
+useEffect(() => {
+  const html = document.querySelector("html");
+  if (html) {
+    html.style.overflow = isMenuOpen ? "hidden" : "auto";
+  }
+}, [isMenuOpen]);
+
 
   return (
     <>
