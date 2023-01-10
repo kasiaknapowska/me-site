@@ -58,7 +58,7 @@ const goToSlide = (slideIndex) => {
 
 
   return (
-    <section className={heroContainer}> 
+    <section className={`topPadding ${heroContainer}`}> 
 
     <div className={imgContainer}>
       <GatsbyImage image={image} alt="" className={heroImg}/>
@@ -66,7 +66,7 @@ const goToSlide = (slideIndex) => {
       <SlidesDots goToSlide={goToSlide} images={images} currentIndex={currentIndex}/>
     </div>
     <div className={`container ${heroTextContainer}`}>
-      <h1>{heroData[currentIndex].title}</h1>
+      <h1 className='heroH1'>{heroData[currentIndex].title}</h1>
       <p>{heroData[currentIndex].text}</p>
       
     </div>

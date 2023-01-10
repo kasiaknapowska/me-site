@@ -94,8 +94,8 @@ const IndexPage = () => (
           <p>
             Gabinet Medycyny Estetycznej Borczyk zlokalizowany jest na terenie
             Kliniki Implantologii i Stomatologii Estetycznej R. Borczyk w
-            Katowicach. Kompleksowo dbamy nie tylko o uśmiech Pacjentów,
-            ale również o ich młody wygląd, zdrowie i samopoczucie. Nasi
+            Katowicach. Kompleksowo dbamy nie tylko o uśmiech Pacjentów, ale
+            również o ich młody wygląd, zdrowie i samopoczucie. Nasi
             wykwalifikowani lekarze wykonują pełen wachlarz zabiegów z zakresu
             medycyny estetycznej, a dostępny na miejscy dietetyk dba o
             prawidłowe odżywianie i smukłą sylwetkę Pacjentów.
@@ -117,10 +117,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section
-      className="container"
-      style={{ padding: "6rem 0", display: "flex", justifyContent: "center" }}
-    >
+    <section className="container verticalPadding flexCenter">
       <div>
         <h2>Masz pytania? Wypełnij formularz</h2>
         <Form />
@@ -170,6 +167,6 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Borczyk" />
+export const Head = () => <Seo title="Medycyna Estetyczna Borczyk" />
 
 export default IndexPage

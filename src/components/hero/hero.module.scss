@@ -2,7 +2,6 @@
 
 .heroContainer {
   width: 100%;
-  //   background-color: $colorSecondary;
   position: relative;
   .imgContainer {
     position: relative;
@@ -13,7 +12,6 @@
   }
 
   .heroTextContainer {
-    // padding: $space6 0 $space5 0;
     padding-top: $space6;
     padding-bottom: $space5;
   }
@@ -40,11 +38,7 @@
   }
 }
 
-// @media screen and ($tablet) {
-//   .heroTextContainer {
-//     width: 60%;
-//   }
-// }
+
 @media screen and ($desktop) {
   .heroContainer {
     height: calc(100vh - 2rem - 2rem - 2rem - 120px);
@@ -60,7 +54,6 @@
   }
 
   .heroTextContainer {
-    // max-width: 400px;
 
     padding-left: 10vw;
     padding-right: 10vw;

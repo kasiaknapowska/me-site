@@ -18,7 +18,7 @@ const Footer = () => {
     <>
       <footer className={footer}>
         <div className="container">
-          <div className="flexContainer">
+          <div className="flex">
             <Link to="/" className={logoContainer}>
               <img src={logo} />
               <span>Medycyna estetyczna borczyk</span>
