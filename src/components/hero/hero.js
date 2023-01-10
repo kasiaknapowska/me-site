@@ -30,9 +30,8 @@ const[image, setImage] = useState(heroImages.allFile.nodes[0].childImageSharp.ga
 
 
 const images = heroImages.allFile.nodes.map(el => getImage(el))
-// const image = heroImages.allFile.nodes[0].childImageSharp.gatsbyImageData
-const indexes = heroImages.allFile.nodes.map(el => el.name)
-console.log(indexes)
+// const indexes = heroImages.allFile.nodes.map(el => el.name)
+// console.log(indexes)
 
 useEffect(() => {
 heroImages.allFile.nodes.map(el => {

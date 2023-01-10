@@ -35,9 +35,9 @@ function onHamburgerClick() {
 useEffect(() => {
   const html = document.querySelector("html");
   if (html) {
-    html.style.overflow = isMenuOpen ? "hidden" : "auto";
+    html.style.overflow = isMenuOpen || isSubmenuOpen ? "hidden" : "auto";
   }
-}, [isMenuOpen]);
+}, [isMenuOpen, isSubmenuOpen]);
 
 
   return (

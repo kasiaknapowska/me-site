@@ -80,7 +80,6 @@ const IndexPage = () => (
         minHeight: "100vh",
         padding: "8rem 0",
         backgroundColor: "rgba(189, 109, 160, 0.1)",
-        
       }}
     >
       <div
@@ -88,7 +87,6 @@ const IndexPage = () => (
         style={{
           display: "flex",
           flexDirection: "column",
-          
         }}
       >
         <div>
@@ -96,18 +94,17 @@ const IndexPage = () => (
           <p>
             Gabinet Medycyny Estetycznej Borczyk zlokalizowany jest na terenie
             Kliniki Implantologii i Stomatologii Estetycznej R. Borczyk w
-            Katowicach. Kompleksowo dbamy nie tylko o uśmiech naszych Pacjentów,
-            ale również o ich młody wygląd, zdrowie i samopoczucie. W naszym
-            gabinecie wykonujemy pełen wachlarz zabiegów z zakresu medycyny
-            estetycznej. Zabiegi wykonywane sa przez wykwalifikowanych lekarzy
-            medycyny estetycznej, więc możesz mieć pewność, że jesteś w dobrych
-            rękach.
+            Katowicach. Kompleksowo dbamy nie tylko o uśmiech Pacjentów,
+            ale również o ich młody wygląd, zdrowie i samopoczucie. Nasi
+            wykwalifikowani lekarze wykonują pełen wachlarz zabiegów z zakresu
+            medycyny estetycznej, a dostępny na miejscy dietetyk dba o
+            prawidłowe odżywianie i smukłą sylwetkę Pacjentów.
           </p>
         </div>
         <div style={{ alignSelf: "flex-end", marginTop: "3rem" }}>
           <h2>Komfort i technologia</h2>
           <p>
-            W naszym gabinecie możesz czuć się komfortowo. Przed lub po zabiegu
+            U nas możesz czuć się w pełni komfortowo. Przed lub po zabiegu
             uraczymy Cię pyszną kawą lub herbatą. Zabiegi wykonujemy w
             znieczuleniu miejscowym. Możesz również skorzystać z podtlenku azotu
             lub znieczulenia ogólnego. Aby zapewnić doskonałe efekty leczenia
@@ -120,11 +117,14 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section className="container" style={{padding: "6rem 0", display: "flex", justifyContent: "center"}}>
-    <div>
-    <h2>Masz pytania? Wypełnij formularz</h2>
-    <Form/>
-    </div>
+    <section
+      className="container"
+      style={{ padding: "6rem 0", display: "flex", justifyContent: "center" }}
+    >
+      <div>
+        <h2>Masz pytania? Wypełnij formularz</h2>
+        <Form />
+      </div>
     </section>
     {/* <div className={styles.textCenter}>
     
