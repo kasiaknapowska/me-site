@@ -4,7 +4,6 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import {heroContainer, heroImg, heroTextContainer, btnHero, imgContainer} from "./hero.module.scss"
 import { heroData } from '../../data/heroData'
-import FBicon from "../../images/icon-color-fb.svg"
 import SocialMedia from '../socialMedia/socialMedia'
 import SlidesNav from '../slidesNav/slidesNav'
 import SlidesDots from '../slidesDots/slidesDots'
@@ -27,13 +26,21 @@ const Hero = () => {
 `)
 
 const [currentIndex, setCurrentIndex] = useState(0)
+const[image, setImage] = useState(heroImages.allFile.nodes[0].childImageSharp.gatsbyImageData)
+
 
 const images = heroImages.allFile.nodes.map(el => getImage(el))
 // const image = heroImages.allFile.nodes[0].childImageSharp.gatsbyImageData
 const indexes = heroImages.allFile.nodes.map(el => el.name)
-console.log(images)
 console.log(indexes)
 
+useEffect(() => {
+heroImages.allFile.nodes.map(el => {
+  if (el.name === currentIndex.toString()) {
+    setImage(getImage(el)) 
+  }
+})
+}, [currentIndex])
 
 const goToPrevious = () => {
   const isFirstSlide = currentIndex === 0;
@@ -50,11 +57,12 @@ const goToSlide = (slideIndex) => {
 };
 
 
+
   return (
     <section className={heroContainer}> 
 
     <div className={imgContainer}>
-      <GatsbyImage image={images[currentIndex]} alt="" className={heroImg}/>
+      <GatsbyImage image={image} alt="" className={heroImg}/>
       <SlidesNav goToNext={goToNext} goToPrevious={goToPrevious}/>
       <SlidesDots goToSlide={goToSlide} images={images} currentIndex={currentIndex}/>
     </div>
