@@ -14,11 +14,12 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: 300;
-  padding-bottom: $space3;
+  padding-bottom: $space6;
 }
 .heroH1 {
   font-family: $playfair;
   font-size: 3.2rem;
+  padding-bottom: $space4;
 }
 h2 {
   font-size: 1.5rem;
@@ -76,6 +77,19 @@ ul {
 .btnPrimary {
   background-color: $colorAccent;
   color: white;
+  &:hover {
+    background-color: $colorPrimary;
+  }
+}
+.btnSecondary {
+  color: $colorAccent;
+  background-color: transparent;
+  border: 1px solid $colorAccent;
+  &:hover {
+    // background-color: rgba(189, 109, 160, 0.1);
+    color: $colorSecondary;
+    border-color: $colorSecondary;
+  }
 }
 .container {
   width: 90%;
@@ -125,7 +139,6 @@ ul {
 iframe {
   width: 100%;
   height: 50vh;
-
 }
 .desktopImg {
   display: none;

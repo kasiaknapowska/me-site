@@ -26,6 +26,7 @@ const RedukcjaZmarszczek = () => (
           <li>Preparaty na bazie specjalistycznej toksyny.</li>
         </ul>
       </section>
+      <Link to="/kontakt" className="btn btnSecondary">Umów wizytę</Link>
      
     </div>
   </Layout>
