@@ -11,7 +11,7 @@ const Hero = () => {
   const heroImages = useStaticQuery(graphql`
   {
     allFile(
-      filter: {sourceInstanceName: {eq: "heroImages"}}
+      filter: {relativeDirectory: {eq: "heroImages"}}
     ) {
       nodes {
           relativePath

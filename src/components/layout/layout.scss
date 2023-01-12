@@ -72,23 +72,28 @@ ul {
   text-align: center;
   font-size: 1rem;
   font-family: $lato;
+  transition: 0.25s;
   cursor: pointer;
 }
 .btnPrimary {
   background-color: $colorAccent;
   color: white;
   &:hover {
-    background-color: $colorPrimary;
+    background-color: $colorSecondary;
   }
 }
 .btnSecondary {
   color: $colorAccent;
   background-color: transparent;
   border: 1px solid $colorAccent;
+  // transition: 0.2s;
   &:hover {
     // background-color: rgba(189, 109, 160, 0.1);
-    color: $colorSecondary;
+    // color: $colorSecondary;
+    // border-color: $colorSecondary;
+    color: white;
     border-color: $colorSecondary;
+    background-color: $colorSecondary;
   }
 }
 .container {
@@ -127,6 +132,13 @@ ul {
 }
 .flexCenter {
   display: flex;
+  justify-content: center;
+}
+.cardsContainer {
+  padding: calc($space6 * 2) 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space6;
   justify-content: center;
 }
 .topPadding {

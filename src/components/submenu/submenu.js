@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import { offerLinks } from "../../data/links"
-import logo from "../../images/me-logo-diament-white.png"
+import logo from "../../icons/me-logo-diament-white.png"
 import { submenu, arrow, submenuList, submenuCol, lg } from "./submenu.module.scss"
 
 const Submenu = ({ setisSubmenuOpen }) => {

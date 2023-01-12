@@ -14,7 +14,7 @@ import {
   offer,
   menuLink
 } from "./navigation.module.scss"
-import logo from "../../images/me-logo.png"
+import logo from "../../icons/me-logo.png"
 import Submenu from "../submenu/submenu"
 import SocialMedia from "../socialMedia/socialMedia"
 

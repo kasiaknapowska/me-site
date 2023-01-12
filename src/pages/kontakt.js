@@ -11,9 +11,9 @@ import {
   heroContainer,
   heroTextContainer,
 } from "../components/hero/hero.module.scss"
-import HomeIcon from "../images/icon-home.svg"
-import PhoneIcon from "../images/icon-phone.svg"
-import MailIcon from "../images/icon-mail.svg"
+import HomeIcon from "../icons/icon-home.svg"
+import PhoneIcon from "../icons/icon-phone.svg"
+import MailIcon from "../icons/icon-mail.svg"
 
 const Kontakt = () => (
   <Layout>
@@ -22,7 +22,7 @@ const Kontakt = () => (
       className={`topPadding ${heroContainer}`}
     >
       <StaticImage
-        src="../gabinetImages/Gabinet4.jpg"
+        src="../images/gabinetImages/Gabinet4.jpg"
         alt="Gabinet Medycyny Estetycznej Borczyk image"
         className="desktopImg"
         //   layout="fullWidth"

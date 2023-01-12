@@ -1,7 +1,7 @@
 import React from 'react'
 import { contactData } from "../../data/contactData"
-import IconPhoneWhite from "../../images/icon-phone-white.svg"
-import IconMailWhite from "../../images/icon-mail-white.svg"
+import IconPhoneWhite from "../../icons/icon-phone-white.svg"
+import IconMailWhite from "../../icons/icon-mail-white.svg"
 import {iconsContainer, iconButton} from "./mobileContact.module.scss"
 
 const MobileContact = () => {

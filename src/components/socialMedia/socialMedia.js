@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {smIcon, smSideIcons, smMenuIcons, smFooterIcons} from "./socialMedia.module.scss"
-import IconFB from "../../images/icon-color-fb.svg"
-import IconIN from "../../images/icon-color-insta.svg"
-import IconFBwhite from "../../images/icon-fb.svg"
-import IconINwhite from "../../images/icon-insta.svg"
+import IconFB from "../../icons/icon-color-fb.svg"
+import IconIN from "../../icons/icon-color-insta.svg"
+import IconFBwhite from "../../icons/icon-fb.svg"
+import IconINwhite from "../../icons/icon-insta.svg"
 
 const SocialMedia = ({type}) => {
   return (
