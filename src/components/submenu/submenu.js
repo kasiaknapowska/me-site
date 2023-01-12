@@ -4,7 +4,7 @@ import { offerLinks } from "../../data/links"
 import logo from "../../icons/me-logo-diament-white.png"
 import { submenu, arrow, submenuList, submenuCol, lg } from "./submenu.module.scss"
 
-const Submenu = ({ setisSubmenuOpen }) => {
+const Submenu = ({ setisSubmenuOpen, closeAllMenus }) => {
   return (
     <div id="submenu" className={submenu}>
       <div className={arrow} onClick={() => setisSubmenuOpen(false)}>
@@ -15,7 +15,7 @@ const Submenu = ({ setisSubmenuOpen }) => {
       <section className={submenuList}>
       <div className={submenuCol}>
         {offerLinks.slice(0, offerLinks.length / 2).map(link => (
-          <Link key={link.text} to={`/${link.url}`}>{link.text}</Link>
+          <Link key={link.text} to={`/${link.url}`} onClick={() => closeAllMenus()}>{link.text}</Link>
         ))}
       </div>
       <div className={submenuCol}>

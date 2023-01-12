@@ -31,6 +31,10 @@ function onHamburgerClick() {
   setIsMenuOpen(!isMenuOpen)
   setIsSubmenuOpen(false)
 }
+function closeAllMenus() {
+  setIsMenuOpen(false)
+  setIsSubmenuOpen(false)
+}
 
 useEffect(() => {
   const html = document.querySelector("html");
@@ -77,7 +81,7 @@ useEffect(() => {
         <SocialMedia type="menu"/>
       </nav>
       {isSubmenuOpen && 
-      <Submenu setisSubmenuOpen={setIsSubmenuOpen}/>
+      <Submenu setisSubmenuOpen={setIsSubmenuOpen} closeAllMenus={closeAllMenus}/>
       }
       {/* <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && menuOpen}`}>
         <div>
