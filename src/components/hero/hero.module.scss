@@ -54,9 +54,8 @@
   }
 
   .heroTextContainer {
-
     padding-left: 10vw;
-    padding-right: 10vw;
+    padding-right: 5vw;
   }
   .btnHero {
     margin-bottom: 0;
@@ -71,6 +70,6 @@
 @media screen and (min-width: 1350px) {
   .heroTextContainer {
     padding-left: calc((100vw - 1100px) / 2);
-    padding-right: calc((100vw - 1100px) / 2);
+    padding-right: calc((100vw - 1100px) / 4);
   }
 }

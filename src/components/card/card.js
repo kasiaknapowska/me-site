@@ -14,7 +14,7 @@ const Card = ({title, details, url, img}) => {
       <div className={content}>
         <h2>{title}</h2>
         <p>{details}</p>
-        <div className={`btn ${cardBtn}`} >Więcej</div>
+        <div className={`btn ${cardBtn}`}>Więcej</div>
       </div>
       <GatsbyImage image={img} alt={title} className={cardImg}/>
     </div>

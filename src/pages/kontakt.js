@@ -52,7 +52,7 @@ const Kontakt = () => (
           {contactData.address}
         </p>
 
-        <p>
+        <p style={{marginTop: "2rem"}}>
           Gabinet jest czynny od poniedziałku do piątku w godzinach od 8:00 do
           20:00
         </p>

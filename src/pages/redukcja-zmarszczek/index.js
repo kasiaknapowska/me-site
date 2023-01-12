@@ -50,9 +50,11 @@ const RedukcjaZmarszczek = ({ data }) => {
           </ul>
         </section>
 
-        <Link to="/kontakt" className="btn btnSecondary">
+      
+       {/* <Link to="/kontakt" className="btn btnSecondary">
           Umów wizytę
-        </Link>
+        </Link> */}
+     
         <section className="cardsContainer">
           {cardImages.map(el =>
             cardsInfo.map(info => {
