@@ -12,6 +12,7 @@ import Header from "../header/header"
 import "./layout.scss"
 import Footer from "../footer/footer"
 import MobileContact from "../mobileContact/mobileContact"
+import ScrollToTop from "../scrollToTop/scrollToTop"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <MobileContact/>
       <Footer/>
+      <ScrollToTop/>
     </>
   )
 }
