@@ -1,6 +1,8 @@
 @import "../../scss/variables";
 
 .scrollBtn {
+  display: none;
+ @media screen and ($tablet) {
   position: fixed;
   bottom: 4rem;
   right: 0;
@@ -19,8 +21,12 @@
     transform: rotate(45deg);
     margin-top: 5px;
   }
+  &:hover {
+    background-color: $colorSecondary;
+  }
   @media screen and ($tablet) {
     bottom: 1rem;
     right: 1.5rem;
   }
+ }
 }
