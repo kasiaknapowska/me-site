@@ -17,7 +17,7 @@ const MezoterapiaPodcisnieniowa = () => {
           </h2>
         </section>
         <section>
-          <h3>O mezoterapii</h3>
+        
           <p>
             Mezoterapia igłowa to rodzaj zabiegu odmładzającego, który polega na
             ostrzykiwaniu skóry małymi dawkami substancji leczniczych, koktajli

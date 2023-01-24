@@ -12,9 +12,14 @@ body {
   color: $colorNeutralDark;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  line-height: 120%;
   font-weight: 300;
   padding-bottom: $space6;
+  @media screen and ($tablet) {
+    font-size: 3rem;
+    
+  }
 }
 .heroH1 {
   font-family: $playfair;
@@ -22,9 +27,12 @@ h1 {
   padding-bottom: $space4;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding-bottom: $space3;
   line-height: 150%;
+  @media screen and ($tablet) {
+    font-size: 1.5rem;
+  }
 }
 h3 {
   font-size: 1.2rem;
@@ -64,6 +72,22 @@ ul {
     position: relative;
     left: -0.5rem;
     bottom: 0.1rem;
+  }
+}
+ol {
+  list-style: none;
+  counter-reset: awesome-counter;
+  li {
+    padding: $space1 0;
+    line-height: 140%;
+    max-width: 50rem;
+    counter-increment: awesome-counter;
+    &::before {
+      content: counter(awesome-counter) ". ";
+      color: $colorPrimary;
+      font-weight: 900;
+      margin-right: $space2;
+    }
   }
 }
 strong {
@@ -113,11 +137,13 @@ strong {
 .pageContainer {
   padding: $space6 0;
   padding-bottom: calc($space6 * 3);
-  h2, p {
+  h2,
+  p {
     // max-width: 100%;
     max-width: 50rem;
   }
 }
+
 // .flexContainer {
 //   display: flex;
 //   flex-direction: column;
@@ -158,7 +184,10 @@ iframe {
   height: 70vh;
 }
 .desktopImg {
-  display: none;
+  display: block;
+  @media screen and ($tablet_s) {
+    display: none;
+  }
   @media screen and ($desktop) {
     display: block;
   }
