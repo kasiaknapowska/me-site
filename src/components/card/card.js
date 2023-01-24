@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from "react"
-import { card, layer, content, cardImg, cardBtn } from "./card.module.scss"
+import { card, layer, cardImg, cardBtn } from "./card.module.scss"
 
 
 
@@ -11,7 +11,7 @@ const Card = ({title, details, url, img}) => {
     <Link to={url}>
       <div className={card}>
       <div className={layer}></div>
-      <div className={content}>
+      <div >
         <h2>{title}</h2>
         <p>{details}</p>
         <div className={`btn ${cardBtn}`}>Więcej</div>

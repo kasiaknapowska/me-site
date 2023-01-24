@@ -14,11 +14,11 @@ body {
 h1 {
   font-size: 2rem;
   line-height: 120%;
-  font-weight: 300;
+  
   padding-bottom: $space6;
   @media screen and ($tablet) {
     font-size: 3rem;
-    
+    font-weight: 300;
   }
 }
 .heroH1 {
@@ -92,6 +92,27 @@ ol {
 }
 strong {
   font-weight: 600;
+}
+table {
+  margin: $space4 0;
+  width: 100%;
+ th {
+  font-size: 1.2rem;
+  line-height: 150%;
+  text-align: left;
+  padding: $space2 0;
+  text-transform: uppercase;
+  }
+  td {
+    padding: $space2 0;
+    border-bottom: 1px solid $colorNeutralLight;
+  }
+  // tr td:first-child {
+  //   min-width: 60vw;
+  // }
+  tr td:last-child {
+    text-align: right;
+  }
 }
 .btn {
   display: inline-block;
