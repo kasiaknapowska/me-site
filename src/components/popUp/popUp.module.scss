@@ -1,0 +1,70 @@
+@import "../../scss/variables";
+.popUpBg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 29;
+}
+
+.popUpContainer {
+  $w: 90%;
+  $h: 40vh;
+
+  width: $w;
+  min-height: $h;
+  max-width: 600px;
+  top: 10vh;
+  left: calc((100% - $w) / 2);
+  background-color: white;
+  position: relative;
+  padding: calc($space6 * 2) $space4 ($space4 * 2) $space4;
+  .closeIcon {
+    width: 2.25rem;
+    height: 2.25rem;
+    position: absolute;
+    top: $sizeGap;
+    right: $space3;
+
+    cursor: pointer;
+    span {
+      position: absolute;
+      display: block;
+      height: 0.15rem;
+      width: 100%;
+      background-color: $colorNeutralDark;
+      &:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.popUpIcon {
+  width: 3rem;
+}
+
+@media screen and ($tablet_s) {
+  .popUpContainer {
+    $h: 40vh;
+    top: calc((100vh - $h) / 2);
+    padding: $sizeGap;
+  }
+}
+
+@media screen and ($tablet) {
+  $w: 600px;
+  .popUpContainer {
+    left: calc((100% - $w) / 2);
+  }
+}

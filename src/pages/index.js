@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
 import Hero from "../components/hero/hero"
 import Form from "../components/form/form"
+import PopUp from "../components/popUp/popUp"
 
 const links = [
   {
@@ -73,6 +74,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
+    <PopUp link="/elektromagnetyczna-stymulacja-miesni"/>
     <Hero />
     <section
       style={{

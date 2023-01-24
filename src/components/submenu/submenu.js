@@ -14,13 +14,19 @@ const Submenu = ({ setisSubmenuOpen, closeAllMenus }) => {
       <img src={logo} className={lg}/>
       <section className={submenuList}>
       <div className={submenuCol}>
-        {offerLinks.slice(0, offerLinks.length / 2).map(link => (
+        {offerLinks.slice(0, offerLinks.length / 3).map(link => (
           <Link key={link.text} to={`/${link.url}`} onClick={() => closeAllMenus()}>{link.text}</Link>
         ))}
       </div>
       <div className={submenuCol}>
         {" "}
-        {offerLinks.slice(offerLinks.length / 2).map(link => (
+        {offerLinks.slice(offerLinks.length / 3, offerLinks.length / 3 + offerLinks.length / 3).map(link => (
+          <Link key={link.text} to={`/${link.url}`}>{link.text}</Link>
+        ))}
+      </div>
+      <div className={submenuCol}>
+        {" "}
+        {offerLinks.slice(offerLinks.length / 3 + offerLinks.length / 3).map(link => (
           <Link key={link.text} to={`/${link.url}`}>{link.text}</Link>
         ))}
       </div>

@@ -37,9 +37,13 @@
   .submenuCol {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 100%;
     gap: $space5;
-    
+  padding-right: 1rem;
+    a:hover {
+      
+      color: $colorSecondary;
+    }
   }
   .arrow {
     display: flex;
@@ -76,10 +80,17 @@
     padding-right: $space6;
     position: fixed;
     .submenuList {
+      padding-top: $sizeGap;
       flex-direction: row;
       justify-content: center;
       gap: calc($sizeGap * 2);
       overflow: auto;
+    }
+    .submenuCol {
+      width: 200px;
+      // a {
+      //   font-size: 18px;
+      // }
     }
     .lg {
       display: block;
