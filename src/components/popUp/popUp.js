@@ -8,7 +8,6 @@ import {
   popUpBg,
   popUpContainer,
   popUpIcon,
-  popUpBtn,
   closeIcon
 } from "./popUp.module.scss"
 
@@ -45,7 +44,7 @@ const PopUp = ({link}) => {
             </div>
           {/* <img src={logo} className={popUpIcon}/> */}
           <h2>Nowość! Zabieg modelowania sylwetki! </h2>
-          <p>Wykona ćwiczenia mięśni za Ciebie! Odpowiednik 20.000 brzuszków podczas jednej 30-minutowej sesji!</p>
+          <p>Nasze urządzenie wykona ćwiczenia mięśni za Ciebie! Odpowiednik 20.000 brzuszków podczas jednej 30-minutowej sesji! </p>
 
           <Link
             style={{marginTop: "1rem"}}
