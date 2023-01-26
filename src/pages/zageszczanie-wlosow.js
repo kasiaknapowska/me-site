@@ -12,51 +12,62 @@ const ZageszczanieWlosow = () => {
         <h1>Zagęszczanie włosów</h1>
         <section>
           <h2>
-            Borykasz się z problemem łysienia lub chcesz odzyskać mocne, zdrowe
-            włosy?
+            Twoje włosy tracą gęstość i wypadają? Jesteś
+            zmęczony/a stosowaniem kolejnych kosmetyków, które nie
+            przynoszą efektów?
           </h2>
         </section>
         <section>
-          <h3>Szukamy przyczyn utraty włosów</h3>
           <p>
-            Utrata włosów to dolegliwość występująca zarówno u mężczyzn jak i u
-            kobiet. Istotne są tutaj predyspozycje genetyczne. Wpływ na stopień
-            rozrzedzania włosów mają również takie czynniki jak: styl życia,
-            nieodpowiednia dieta, stres, choroba. Utrata włosów następuje na
-            skutek nieprawidłowego odżywiania cebulek i zaburzenia równowagi
-            skóry głowy.
+            Stres, przemęczenie, nieodpowiednia dieta, przyjmowanie leków,
+            anemia czy problemy z tarczycą, niewłaściwa pielęgnacja, czynniki
+            genetyczne – to wszystko osłabia włosy i powoduje ich nadmierne
+            wypadanie. A to odbija się na atrakcyjności i pogłębia jeszcze
+            bardziej stres, który nasila utratę włosów. I koło się zamyka…
           </p>
           <p>
             Aby skutecznie poradzić sobie z problemem cienkich, wypadających
-            włosów nie wystarczy wykonać kilku zabiegów, ponieważ efekt może nie
-            być satysfakcjonujący. Problem leży wewnątrz organizmu, dlatego
-            trzeba najpierw poznać przyczynę przerzedzania włosów, wykonać
-            odpowiednie badania laboratoryjne, przeprowadzić wywiad medyczny.
-            Być może, by uporać się z problemem konieczna będzie modyfikacja
-            stylu życia.
+            włosów sama zmiana kosmetyków może okazać się niewystarczająca.
+            Problem leży wewnątrz organizmu, dlatego trzeba najpierw poznać
+            przyczynę przerzedzania włosów, wykonać odpowiednie badania
+            laboratoryjne, przeprowadzić wywiad medyczny. Być może, by uporać
+            się z problemem konieczna będzie modyfikacja stylu życia.
           </p>
           <p>
-            W naszym gabinecie właśnie w taki sposób leczymy łysienie.
-            Rozpoczynamy od badań krwi, analizujemy stan zdrowia i styl życia
-            Pacjenta, podpowiadamy, co zrobić, by zapobiec utracie włosów oraz
-            wykonujemy szereg zabiegów zagęszczających włosy. Dzięki temu efekty
-            leczenia są długotrwałe.
+            Aby skutecznie poradzić sobie z utratą włosów opracowaliśmy dla
+            naszych Pacjentów procedurę postępowania obejmującą dogłębną
+            diagnostykę problemu, zindywidualizowany zestaw zaleceń oraz zabiegi
+            zagęszczające włosy. Dzięki temu efekty leczenia są długotrwałe.
           </p>
+          <p>Diagnostyka łysienia obejmuje:</p>
+          <ul>
+            <li>wywiad medyczny i badanie krwi</li>
+            <li>badanie poziomu testosteronu</li>
+            <li>
+              szczegółowy wywiad pod kątem stylu życia, żywienia, predyspozycji
+              genetycznych
+            </li>
+          </ul>
+          <p>Leczenie opiera się m.in. na:</p>
+          <ul>
+            <li>uzupełnieniu mikroelementów i flory bakteryjnej</li>
+            <li>wdrożeniu diety celowanej</li>
+            <li>
+              stymulacji regeneracji włosów poprzez mikroiniekcje własnych
+              komórek macierzystych
+            </li>
+          </ul>
         </section>
         <section>
           <h3>Nieinwazyjne zagęszczanie włosów osoczem bogatopłytkowym</h3>
           <p>
-            Aby przywrócić włosom dawną objętość chirurgia plastyczna oferuje
-            zabiegi przeszczepu włosów. Metoda jest inwazyjna, stąd nie wszyscy
-            pacjenci skłonni są podjąć tego typu terapię. Alternatywą dla
-            zabiegów przeszczepu włosów są nieinwazyjne zabiegi z zakresu
-            medycyny estetycznej. Za pomocą mezoterapii można skutecznie
-            zagęszczać włosy poprzez aktywację i głębokie odżywianie cebulek
-            włosowych. Podczas zabiegu do skóry głowy wprowadzane jest
-            iniekcyjnie osocze bogatopłytkowe pobieranie z krwi pacjenta. Osocze
-            powstrzymuje wypadanie włosów i stymulują nieaktywne cebulki włosowe
-            do wzrostu. Dzięki temu uzyskuje się efekt pogrubienia i
-            zagęszczenia włosów.
+            Za pomocą mezoterapii, będącej nieinwazyjną alternatywą dla
+            chirurgicznych przeszczepów włosów, można skutecznie zagęszczać
+            włosy poprzez aktywację i głębokie odżywianie cebulek włosowych.
+            Podczas zabiegu do skóry głowy wprowadzane jest osocze
+            bogatopłytkowe pobieranie z krwi pacjenta. Osocze powstrzymuje
+            wypadanie włosów i stymulują nieaktywne cebulki włosowe do wzrostu.
+            Dzięki temu uzyskuje się efekt pogrubienia i zagęszczenia włosów.
           </p>
         </section>
         <section>
