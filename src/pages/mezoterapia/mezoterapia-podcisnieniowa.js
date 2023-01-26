@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout/layout"
-import Seo from "../components/seo"
+import Layout from "../../components/layout/layout"
+import Seo from "../../components/seo"
 
 const MezoterapiaPodcisnieniowa = () => {
   return (
@@ -16,35 +16,8 @@ const MezoterapiaPodcisnieniowa = () => {
             podciśnieniowa będzie dla Ciebie idealna!
           </h2>
         </section>
+       
         <section>
-        
-          <p>
-            Mezoterapia igłowa to rodzaj zabiegu odmładzającego, który polega na
-            ostrzykiwaniu skóry małymi dawkami substancji leczniczych, koktajli
-            na bazie kwasu hialuronowego, peptydów, nukleotydów lub osocza
-            bogatego w komórki macierzyste uzyskiwanego z krwi pacjenta . Ilość
-            zabiegów wymaganych do osiągnięcia pełnego efektu terapii ustalana
-            jest indywidualnie podczas konsultacji z lekarzem.
-          </p>
-        </section>
-        <section>
-          <h3>Dla kogo?</h3>
-          <p>
-            Mezoterapia stosowana jest w celu rewitalizacji, odmładzania i
-            liftingowania skóry. Już po pierwszym zabiegu widoczne są pierwsze
-            efekty w postaci poprawy kondycji, elastyczności i gładkości skóry.
-            Zanikają również drobne zmarszczki, a te głębsze ulegają spłyceniu.
-            Zwykle mezoterapii poddawane są takie partie ciała jak: twarz,
-            szyja, dekolt, dłonie. W tych miejscach skóra najszybciej traci swój
-            blask. Metoda znajduje również zastosowanie w terapii łysienia oraz
-            w usuwaniu cellulitu i rozstępów.
-          </p>
-        </section>
-        <section>
-          <h3>
-            Nowość! Mezoterapia podciśnieniowa dla zwiększenia skuteczności
-            zabiegu
-          </h3>
           <p>
             Innowacyjne urządzenie do mezoterapii pozwala na komfortowe i
             bezbolesne przeprowadzenie zabiegów mezoterapii przy zastosowaniu

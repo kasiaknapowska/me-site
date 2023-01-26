@@ -26,7 +26,7 @@ const cardsInfo = [
 
 const RedukcjaZmarszczek = ({ data }) => {
   const cardImages = data.allFile.nodes
-
+console.log(cardImages)
   return (
     <Layout>
       <div className="container pageContainer">

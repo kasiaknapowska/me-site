@@ -74,7 +74,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <PopUp link="/elektromagnetyczna-stymulacja-miesni"/>
+    <PopUp link="/elektromagnetyczna-stymulacja-miesni" />
     <Hero />
     <section
       style={{
@@ -92,29 +92,30 @@ const IndexPage = () => (
         }}
       >
         <div>
-          <h2>Dlaczego warto wybrać nasz gabinet?</h2>
+          <h2>Gdy czujesz się młodo, wyglądasz młodziej… </h2>
           <p>
-            Gabinet Medycyny Estetycznej Borczyk zlokalizowany jest na terenie
-            Kliniki Implantologii i Stomatologii Estetycznej R. Borczyk w
-            Katowicach. Kompleksowo dbamy nie tylko o uśmiech Pacjentów, ale
-            również o ich młody wygląd, zdrowie i samopoczucie. Nasi
-            wykwalifikowani lekarze wykonują pełen wachlarz zabiegów z zakresu
-            medycyny estetycznej, a dostępny na miejscy dietetyk dba o
-            prawidłowe odżywianie i smukłą sylwetkę Pacjentów.
+            Zadbamy kompleksowo nie tylko o Twój wygląd, ale również o zdrowie,
+            uśmiech i samopoczucie. Zaproponujemy indywidualnie dobrany zestaw
+            zabiegów, które wygładzą zmarszczki, intensywnie odżywią i odmłodzą
+            skórę, wymodelują kontury twarzy oraz wyszczuplą sylwetkę. Wzmocnimy
+            i zagęścimy Twoje włosy przy wykorzystaniu komórek macierzystych
+            oraz wdrożymy postępowanie, które redukuje wypadanie włosów i
+            stymuluje ich wzrost.
           </p>
         </div>
         <div style={{ alignSelf: "flex-end", marginTop: "3rem" }}>
-          <h2>Komfort i technologia</h2>
+          <h2>Poznamy potrzeby Twojego organizmu</h2>
           <p>
-            U nas możesz czuć się w pełni komfortowo. Przed lub po zabiegu
-            uraczymy Cię pyszną kawą lub herbatą. Zabiegi wykonujemy w
-            znieczuleniu miejscowym. Możesz również skorzystać z podtlenku azotu
-            lub znieczulenia ogólnego. Aby zapewnić doskonałe efekty leczenia
-            wyposażyliśmy gabinet w nowoczesny sprzęt m.in laser frakcyjny,
-            urządzenie do mezoterapii podciśnieniowej Vital Injector 2,
-            Dermapen, PELLEVE, urządzenie do stymulacji mięśni. Dla
-            bezpieczeństwa stosujemy wyłacznie najwyższej jakości preparaty i
-            kosmetyki renomowanych firm.
+            Na podstawie badań i wywiadu medycznego uzupełnimy mikroelementy i
+            florę bakteryjną zgodnie z indywidualnym zapotrzebowaniem. Nasz
+            dietetyk zdiagnozuje problemy żywieniowe oraz wdroży dietę celowaną,
+            która poprawi odporność, zmniejszy poziom stresu, pozwoli zachować
+            szczupłą sylwetkę, odmłodzi oraz korzystnie wpłynie na jakość skóry,
+            włosów, paznokci. Fizjoterapeuta zadba o Twój komfort, przywróci
+            prawidłowe napięcie mięśniowe, zaktywizuje i rozluźni tkanki,
+            poprawi mikrokrążenie. W efekcie zyskasz ogólną poprawę stanu
+            psychofizycznego i redukcję zmęczenia co pozytywnie wpłynie na
+            wygląd zewnętrzny!
           </p>
         </div>
       </div>

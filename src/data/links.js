@@ -7,21 +7,23 @@ export const navLinks = [
 
 export const offerLinks = [
   { text: "redukcja zmarszczek", url: "redukcja-zmarszczek" },
-  { text: "osocze bogatopłytkowe", url: "osocze-bogatoplytkowe" },
-  { text: "mezoterapia podciśnieniowa", url: "mezoterapia-podcisnieniowa" },
+  { text: "osocze bogatopłytkowe", url: "mezoterapia/osocze-bogatoplytkowe" },
+  { text: "mezoterapia", url: "mezoterapia" },
+  { text: "dermapen", url: "mezoterapia/dermapen" }, 
+  { text: "modelowanie sylwetki", url: "modelowanie-sylwetki" },
+  // {
+  //   text: "elektromagnetyczna stymulacja mięśni",
+  //   url: "modelowanie-sylwetki/elektromagnetyczna-stymulacja-miesni",
+  // }, 
+  // { text: "lipoliza - usuwanie tłuszczu", url: "modelowanie-sylwetki/lipoliza" },
   { text: "zagęszczanie włosów", url: "zageszczanie-wlosow" },
   { text: "modelowanie ust", url: "modelowanie-ust" },
-  {
-    text: "elektromagnetyczna stymulacja mięśni",
-    url: "elektromagnetyczna-stymulacja-miesni",
-  },
   { text: "lifting twarzy", url: "lifting-twarzy" },
   { text: "nawilżanie skóry", url: "nawilzanie-skory" },
   { text: "leczenie nadpotliwości", url: "leczenie-nadpotliwosci" },
   { text: "zabiegi laserowe", url: "zabiegi-laserowe" },
-  { text: "lipoliza - usuwanie tłuszczu", url: "lipoliza" },
   { text: "zabiegi geneo", url: "geneo" },
-  { text: "dermapen", url: "dermapen" },
   { text: "pelleve", url: "pelleve" },
   { text: "peelingi medyczne", url: "peelingi-medyczne" },
+  { text: "dietetyka", url: "dietetyka" },
 ]

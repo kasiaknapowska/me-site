@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout/layout"
-import Seo from "../components/seo"
+import Layout from "../../components/layout/layout"
+import Seo from "../../components/seo"
 
 const ElektromagnetycznaStymulacjaMiesni = () => {
   return (
@@ -12,7 +12,7 @@ const ElektromagnetycznaStymulacjaMiesni = () => {
         <h1>Elektromagnetyczna stymulacja mięśni</h1>
         <section>
           <h2>
-            Chcesz wymodelować sylwetkę bez konieczności uciążliwych ćwiczeń?
+            Chcesz wymodelować mięśnie bez konieczności uciążliwych ćwiczeń?
           </h2>
         </section>
         <section>

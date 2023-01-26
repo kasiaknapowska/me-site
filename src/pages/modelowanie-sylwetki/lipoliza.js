@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout/layout"
-import Seo from "../components/seo"
+import Layout from "../../components/layout/layout"
+import Seo from "../../components/seo"
 
 const Lipoliza = () => {
   return (
@@ -12,8 +12,7 @@ const Lipoliza = () => {
         <h1>Lipoliza iniekcyjna</h1>
         <section>
           <h2>
-            Chcesz w prosty i nieinwazyjny sposób wymodelować swoją sylwetkę i
-            pozbyć się zbędnego tłuszczu?
+            Chcesz w prosty i nieinwazyjny sposób pozbyć się zbędnego tłuszczu?
           </h2>
         </section>
         <section>
