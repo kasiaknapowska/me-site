@@ -1,5 +1,5 @@
 export const heroData = [
     {img: "0", title: "Odkryj swoje piękno", text: "Marzysz, by Twoje ciało było onaką zdrowia, piękna i dobrego samopoczucia? Zapraszamy do naszego gabinetu, gdzie pomożemy Ci usunąć niedoskonałości ciała i poprawić wygląd Twojej skóry.", url: "kontakt"},
-    {img: "1", title: "Odzyskaj smukłą sylwetkę", text: "Wymarzona sylwetka bez uciążliwych ćwiczeń? To możliwe. Elektromagnetyczny stymulator mięśni wykona spięcia modelując Twoją sylwetkę w czasie, gdy Ty będziesz się relaksować.", url: "elektromagnetyczna-stymulacja-miesni"},
+    {img: "1", title: "Odzyskaj smukłą sylwetkę", text: "Wymarzona sylwetka bez uciążliwych ćwiczeń? To możliwe. Elektromagnetyczny stymulator mięśni wykona spięcia modelując Twoją sylwetkę w czasie, gdy Ty będziesz się relaksować.", url: "modelowanie-sylwetki/elektromagnetyczna-stymulacja-miesni"},
     {img: "2", title: "Zadbaj o gęste włosy", text: "By Twoje włosy odzyskały gęstość i blask konieczne jest kompleksowe działanie - poznanie i wyeliminowanie przyczyny problemu dzięki dogłębnej diagnostyce oraz zabiegi stymulujące wzrost włosów.", url: "zageszczanie-wlosow"}
 ]

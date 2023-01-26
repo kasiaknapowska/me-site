@@ -1,11 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { graphql } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
 
 import Layout from "../../components/layout/layout"
 import Seo from "../../components/seo"
-import Card from "../../components/card/card"
+import Cards from "../../components/cards/cards"
 
 const cardsInfo = [
   {
@@ -25,8 +23,7 @@ const cardsInfo = [
 ]
 
 const RedukcjaZmarszczek = ({ data }) => {
-  const cardImages = data.allFile.nodes
-console.log(cardImages)
+  const cardsImg = data.allFile.nodes
   return (
     <Layout>
       <div className="container pageContainer">
@@ -50,29 +47,7 @@ console.log(cardImages)
           </ul>
         </section>
 
-      
-       {/* <Link to="/kontakt" className="btn btnSecondary">
-          Umów wizytę
-        </Link> */}
-     
-        <section className="cardsContainer">
-          {cardImages.map(el =>
-            cardsInfo.map(info => {
-              if (el.name.toLowerCase() === info.name.toLowerCase()) {
-                const img = getImage(el)
-                return (
-                  <Card
-                    key={el.name}
-                    title={info.title}
-                    details={info.details}
-                    url={info.url}
-                    img={img}
-                  />
-                )
-              }
-            })
-          )}
-        </section>
+      <Cards cardsImg={cardsImg} cardsInfo={cardsInfo}/>
       </div>
     </Layout>
   )
