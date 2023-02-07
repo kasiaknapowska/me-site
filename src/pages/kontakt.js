@@ -40,15 +40,15 @@ const Kontakt = () => (
           !
         </h3>
         <p>
-          <img src={PhoneIcon} className="contactIcon" />
+          <img src={PhoneIcon} className="contactIcon" alt="phone"/>
           {contactData.phone}
         </p>
         <p>
-          <img src={MailIcon} className="contactIcon" />
+          <img src={MailIcon} className="contactIcon" alt="mail"/>
           {contactData.email}
         </p>
         <p>
-          <img src={HomeIcon} className="contactIcon" />
+          <img src={HomeIcon} className="contactIcon" alt="address"/>
           {contactData.address}
         </p>
 
@@ -66,6 +66,7 @@ const Kontakt = () => (
       allowFullScreen=""
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
+      title="google map"
     ></iframe>
 
     <section id="form" className="container verticalPadding flexCenter">

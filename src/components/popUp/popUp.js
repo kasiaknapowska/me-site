@@ -2,18 +2,15 @@ import { Link } from "gatsby"
 import React from "react"
 import { useState } from "react"
 
-import logo from "../../icons/me-logo-diament.png"
-
 import {
   popUpBg,
   popUpContainer,
-  popUpIcon,
   closeIcon
 } from "./popUp.module.scss"
 
 const isBrowser = typeof window !== "undefined"
 
-const PopUp = ({link}) => {
+const PopUp = ({link, title, description}) => {
   const [showPopUp, setShowPopUp] = useState(true)
 
   function setShow() {
@@ -37,14 +34,13 @@ const PopUp = ({link}) => {
         }}
       >
         <div className={popUpContainer}>
-            <div onClick={() => setShow()} className={closeIcon} >
+            <div role="presentation" onClick={() => setShow()} className={closeIcon} >
          
                 <span></span>
                 <span></span>
             </div>
-          {/* <img src={logo} className={popUpIcon}/> */}
-          <h2>Nowość! Zabieg modelowania sylwetki! </h2>
-          <p>Nasze urządzenie wykona ćwiczenia mięśni za Ciebie! Odpowiednik 20.000 brzuszków podczas jednej 30-minutowej sesji! </p>
+          <h2>{title}</h2>
+          <p>{description}</p>
 
           <Link
             style={{marginTop: "1rem"}}

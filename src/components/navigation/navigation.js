@@ -2,7 +2,7 @@ import * as React from "react"
 import { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { contactData } from "../../data/contactData"
-import { navLinks, offerLinks } from "../../data/links"
+
 import {
   nav,
   hamburger,
@@ -57,17 +57,17 @@ useEffect(() => {
         <span></span>
       </div>
       <Link className={logoMobile} to="/">
-        <img src={logo} />
+        <img src={logo} alt="logo"/>
       </Link>
       <nav className={`${!isMenuOpen && "container"} ${nav} ${isMenuOpen && menuOpen}`}>
         <div>
           <Link className={menuLink} to="/o-nas">O nas</Link>
-          <span className={offer} onClick={() => setIsSubmenuOpen(true)}>Oferta</span>
+          <span role="presentation" className={offer} onClick={() => setIsSubmenuOpen(true)} >Oferta</span>
           <Link className={menuLink} to="/cennik">Cennik</Link>
         </div>
         <div>
           <Link className={logoDesktop} to="/">
-            <img src={logo} />
+            <img src={logo} alt="logo"/>
           </Link>
         </div>
         <div>

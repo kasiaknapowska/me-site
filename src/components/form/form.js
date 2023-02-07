@@ -1,7 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 import { useInView } from "react-intersection-observer"
 import { useForm } from "react-hook-form"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Form = () => {
   const [formIsSubmitted, setFormIsSubmitted] = React.useState(false)
@@ -159,8 +160,8 @@ const Form = () => {
         />
         <span></span>
         <div>
-          Wyrażam zgodę na przetwarzanie moich danych osobowych.{" "}
-          <Link to="/">Treść zgody.</Link> * &nbsp;&nbsp;{" "}
+          Wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi kontaktu za pośrednictwem formularza.{" "}
+          <AnchorLink to="/polityka-prywatnosci#zgoda" title="Zgoda na przetwarzanie danych">Pełna treść zgody.</AnchorLink> * &nbsp;&nbsp;{" "}
           {errors.personalData && (
             <span className="errorMessage">{errors.personalData?.message}</span>
           )}

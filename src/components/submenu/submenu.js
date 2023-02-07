@@ -7,11 +7,11 @@ import { submenu, arrow, submenuList, submenuCol, lg } from "./submenu.module.sc
 const Submenu = ({ setisSubmenuOpen, closeAllMenus }) => {
   return (
     <div id="submenu" className={submenu}>
-      <div className={arrow} onClick={() => setisSubmenuOpen(false)}>
+      <div role="presentation" className={arrow} onClick={() => setisSubmenuOpen(false)}>
         <div></div>
         <div></div>
       </div>
-      <img src={logo} className={lg}/>
+      <img src={logo} className={lg} alt="logo"/>
       <section className={submenuList}>
       <div className={submenuCol}>
         {offerLinks.slice(0, offerLinks.length / 3).map(link => (

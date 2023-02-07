@@ -11,11 +11,6 @@ export const offerLinks = [
   { text: "mezoterapia", url: "mezoterapia" },
   { text: "dermapen", url: "mezoterapia/dermapen" }, 
   { text: "modelowanie sylwetki", url: "modelowanie-sylwetki" },
-  // {
-  //   text: "elektromagnetyczna stymulacja mięśni",
-  //   url: "modelowanie-sylwetki/elektromagnetyczna-stymulacja-miesni",
-  // }, 
-  // { text: "lipoliza - usuwanie tłuszczu", url: "modelowanie-sylwetki/lipoliza" },
   { text: "zagęszczanie włosów", url: "zageszczanie-wlosow" },
   { text: "modelowanie ust", url: "modelowanie-ust" },
   { text: "lifting twarzy", url: "lifting-twarzy" },

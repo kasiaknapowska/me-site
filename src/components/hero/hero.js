@@ -34,12 +34,12 @@ const images = heroImages.allFile.nodes.map(el => getImage(el))
 // console.log(indexes)
 
 useEffect(() => {
-heroImages.allFile.nodes.map(el => {
+heroImages.allFile.nodes.forEach(el => {
   if (el.name === currentIndex.toString()) {
     setImage(getImage(el)) 
   }
 })
-}, [currentIndex])
+}, [currentIndex, heroImages.allFile.nodes])
 
 const goToPrevious = () => {
   const isFirstSlide = currentIndex === 0;

@@ -46,7 +46,7 @@ const IndexPage = ({data}) => {
 
 return (
   <Layout>
-  <PopUp link="/elektromagnetyczna-stymulacja-miesni" />
+  <PopUp link="/modelowanie-sylwetki/elektromagnetyczna-stymulacja-miesni" title="Nowość! Zabieg modelowania sylwetki!" description="Nasze urządzenie wykona ćwiczenia mięśni za Ciebie! Odpowiednik 20.000 brzuszków podczas jednej 30-minutowej sesji!"/>
   <Hero />
   <section
     style={{

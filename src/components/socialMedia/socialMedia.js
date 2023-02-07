@@ -14,25 +14,25 @@ const SocialMedia = ({type}) => {
         target="blank"
         rel="noopener noreferrer"
       >
-        <img src={type === "side" ? IconFB : IconFBwhite} className={smIcon} />
+        <img src={type === "side" ? IconFB : IconFBwhite} className={smIcon} alt="facebook"/>
       </a>
       <a
         href="https://www.instagram.com/medycyna_estetyczna_borczyk"
         target="blank"
         rel="noopener noreferrer"
       >
-         <img src={type === "side" ? IconIN : IconINwhite} className={smIcon} />
+         <img src={type === "side" ? IconIN : IconINwhite} className={smIcon} alt="instagram"/>
       </a>
     </div>
   )
 }
 
-// SocialMedia.propTypes = {
-//     type: PropTypes.string,
-//   }
+SocialMedia.propTypes = {
+    type: PropTypes.string,
+  }
   
-//   SocialMedia.defaultProps = {
-//     type: `footer`,
-//   }
+  SocialMedia.defaultProps = {
+    type: `footer`,
+  }
 
 export default SocialMedia

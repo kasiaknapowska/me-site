@@ -6,6 +6,7 @@ const SlidesDots = ({images, goToSlide, currentIndex}) => {
     <div className={dots}>
           {images.map((image, imageIndex) => (
             <div
+            role="presentation"
               key={imageIndex}
               onClick={() => goToSlide(imageIndex)}
               className={`${dot} ${imageIndex === currentIndex ? dotActive : ""}`}

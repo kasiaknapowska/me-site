@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="container">
           <div className="flex">
             <Link to="/" className={logoContainer}>
-              <img src={logo} />
+              <img src={logo} alt="logo"/>
               <span>Medycyna estetyczna borczyk</span>
             </Link>
             <div className={footerLinksContainer}>
@@ -28,8 +28,11 @@ const Footer = () => {
                 O nas
               </Link>
               <span
+              role="button"
+              tabIndex={0}
                 className={footerLink}
                 onClick={() => setIsSubmenuOpen(true)}
+                onKeyDown={() => setIsSubmenuOpen(true)}
               >
                 Zabiegi
               </span>

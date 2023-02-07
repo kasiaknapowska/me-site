@@ -20,6 +20,7 @@ const Cards = ({cardsImg, cardsInfo}) => {
             />
           )
         }
+        
       })
     )}
   </section>
