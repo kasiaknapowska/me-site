@@ -12,18 +12,15 @@ Responsive static website built with the use of React-based framework [Gatsby.js
 
 ## Tech stack
 
-[Gatsby.js](https://www.gatsbyjs.com)
-[GraphQL in Gatsby](https://www.gatsbyjs.com/docs/tutorial/part-4/)
-[React](https://reactjs.org/)
-[SCSS](https://sass-lang.com/)
-[Framer motion](https://www.framer.com/motion/)
-[Netlify Forms](https://www.netlify.com/)
+1. [Gatsby.js](https://www.gatsbyjs.com)
+2. [GraphQL in Gatsby](https://www.gatsbyjs.com/docs/tutorial/part-4/)
+3. [React](https://reactjs.org/)
+4. [SCSS](https://sass-lang.com/)
+5. [Framer motion](https://www.framer.com/motion/)
+6. [Netlify Forms](https://www.netlify.com/)
 
 ## Deployed on netlify
 [medycynaestetycznaborczyk.netlify.app](https://medycynaestetycznaborczyk.netlify.app/)
-
-## Author
-Katarzyna Knapowska
 
 ## About Gatsby
 
