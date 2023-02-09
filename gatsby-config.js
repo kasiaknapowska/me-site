@@ -15,6 +15,7 @@ module.exports = {
     siteUrl: `https://www.medycynaestetycznaborczyk.pl/`,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {

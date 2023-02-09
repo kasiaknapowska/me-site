@@ -2,7 +2,6 @@
 .card {
   width: 270px;
   height: 400px;
-//   background-color: $colorNeutralLight;
   border: 1px solid $colorNeutralLight;
   padding: $space5;
   position: relative;
@@ -52,7 +51,7 @@ transition: 0.5s;
     }
   }
   &:hover {
-    // box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
     border-color: white;
     h2, p {
       color: $colorWhite;
