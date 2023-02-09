@@ -1,13 +1,29 @@
 import * as React from "react"
-
-import Layout from "../components/layout/layout"
+import { Link } from "gatsby"
+import { motion } from "framer-motion"
 import Seo from "../components/seo"
 
+import logo from "../icons/me-logo-diament.png"
+
 const NotFoundPage = () => (
-  <Layout>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <main className="notFound container">
+    <motion.img
+      src={logo}
+      alt="logo"
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 160,
+        damping: 30,
+      }}
+    />
+    <h1>Błąd 404</h1>
+    <p>Strona, której szukasz, nie istnieje...</p>
+    <Link to="/" className="btn btnSecondary">
+      Przejdź do strony głównej
+    </Link>
+  </main>
 )
 
 export const Head = () => <Seo title="404: Not Found" />

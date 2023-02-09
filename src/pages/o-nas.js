@@ -8,7 +8,7 @@ import Carousel from "../components/carousel/carousel"
 const ONas = ({data}) => {
 
   const carouselImg = data.allFile.nodes
-console.log(carouselImg)
+
   return (
     <Layout>
       <div className="container pageContainer">
