@@ -41,6 +41,8 @@ heroImages.allFile.nodes.forEach(el => {
 })
 }, [currentIndex, heroImages.allFile.nodes])
 
+
+
 const goToPrevious = () => {
   const isFirstSlide = currentIndex === 0;
   const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;

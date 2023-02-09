@@ -1,9 +1,14 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
+import Carousel from "../components/carousel/carousel"
 
-const ONas = () => {
+const ONas = ({data}) => {
+
+  const carouselImg = data.allFile.nodes
+console.log(carouselImg)
   return (
     <Layout>
       <div className="container pageContainer">
@@ -39,9 +44,23 @@ const ONas = () => {
             kosmetyki renomowanych firm.
           </p>
         </section>
+        <Carousel carouselImg={carouselImg}/>
       </div>
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query {
+    allFile(filter: { relativeDirectory: { eq: "gabinetImages" } }) {
+      nodes {
+        name
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  }
+`
 export const Head = () => <Seo title="Gabinet medycyny estetycznej Borczyk" />
 export default ONas
