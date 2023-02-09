@@ -54,6 +54,6 @@ const Geneo = () => {
   )
 }
 export const Head = () => (
-  <Seo title="Geneo - odmładzanie u ujędrnianie skóry" />
+  <Seo title="Geneo - odmładzanie u ujędrnianie skóry" description="Chcesz oczyścić, poprawić kolor, odmłodziś i nawilżyć skórę. Zapraszamy na zabiegi w technologii GENEO. Umów wizytę 32 606 04 27."/>
 )
 export default Geneo

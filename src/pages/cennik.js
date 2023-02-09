@@ -56,5 +56,5 @@ export const pageQuery = graphql`
     }
   }
 `
-export const Head = () => <Seo title="Cennik zabiegów medycyny estetycznej" />
+export const Head = () => <Seo title="Cennik zabiegów medycyny estetycznej" description="Sprawdź ceny zabiegów medycyny estetycznej w klinice Borczyk. Umów się na konsultację 32 606 04 27"/>
 export default Cennik

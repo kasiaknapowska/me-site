@@ -78,6 +78,6 @@ const Kontakt = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Skontaktuj się z nami" />
+export const Head = () => <Seo title="Medycyna estetyczna Katowice" description="Zabiegi odmładzające, wyszczuplające, zagęszczające włosy. Umów wizytę 32 606 04 27."/>
 
 export default Kontakt

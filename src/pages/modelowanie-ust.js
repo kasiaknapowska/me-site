@@ -51,5 +51,5 @@ const ModelowanieUst = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Modelowanie ust" />
+export const Head = () => <Seo title="Modelowanie ust" description="Przywracanie naturalnej objętości ust bez efektu sztucznego wypełnienia. Zapraszamy do naszego gabinetu w Katowicach!"/>
 export default ModelowanieUst

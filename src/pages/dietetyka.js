@@ -126,5 +126,5 @@ const Dietetyka = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Dietetyka" />
+export const Head = () => <Seo title="Dietetyka" description="Prawidłowe nawyki żywieniowe przynoszą liczne korzyści - młodszy wygląd, zgrabna sylwetka, lepsze samopoczucie. Współpraca z naszym dietetykiem opiera się na odpowiedniej diagnostyce, ustaleniu diety celowanej, suplementacji oraz edukacji żywieniowej."/>
 export default Dietetyka

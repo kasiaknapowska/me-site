@@ -85,5 +85,5 @@ const NawilzanieSkory = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Nawilżanie skóry" />
+export const Head = () => <Seo title="Nawilżanie skóry" description="Skuteczne nawilżanie skóry kwasem hialuronowym. Mezoterapia, vital injector, Dermapen. Umów wizytę!"/>
 export default NawilzanieSkory

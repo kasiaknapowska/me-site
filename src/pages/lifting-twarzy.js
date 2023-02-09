@@ -47,5 +47,5 @@ const LiftingTwarzy = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Lifting twarzy" />
+export const Head = () => <Seo title="Lifting twarzy" description="Zabiegi wolumetryczne w Katowicach! Nieinwazyjny sposób na przywrócenie młodego wyglądu Twojej twarzy."/>
 export default LiftingTwarzy

@@ -26,6 +26,6 @@ const NotFoundPage = () => (
   </main>
 )
 
-export const Head = () => <Seo title="404: Not Found" />
+export const Head = () => <Seo title="404: Strona nie istnieje" />
 
 export default NotFoundPage

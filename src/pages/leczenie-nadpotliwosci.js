@@ -41,5 +41,5 @@ const LeczenieNadpotliwosci = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Leczenie nadpotliwości" />
+export const Head = () => <Seo title="Leczenie nadpotliwości" description="Nadmierne pocenie można skutecznie zredukować wykonując zabieg z zastosowaniem toksyny. Jeśli problem dotyczy także Ciebie - zgłoś się do nas!"/>
 export default LeczenieNadpotliwosci
