@@ -8,15 +8,32 @@
   Gatsby.js website for Esthetic Medicine
 </h1>
 
-Responsive static website built with the use of React-based framework [Gatsby.js](https://www.gatsbyjs.com)
+Responsive static website built with the use of React-based framework [Gatsby.js](https://www.gatsbyjs.com). 
 
-## What's inside?
+## Tech stack
+
+[Gatsby.js](https://www.gatsbyjs.com)
+[GraphQL in Gatsby](https://www.gatsbyjs.com/docs/tutorial/part-4/)
+[React](https://reactjs.org/)
+[SCSS](https://sass-lang.com/)
+[Framer motion](https://www.framer.com/motion/)
+[Netlify Forms](https://www.netlify.com/)
+
+## Deployed on netlify
+[medycynaestetycznaborczyk.netlify.app](https://medycynaestetycznaborczyk.netlify.app/)
+
+## Author
+Katarzyna Knapowska
+
+## About Gatsby
+
+### What's inside?
 
 1. The  **`/src`** directory contains all of the code related to what is seen on the front-end of the site (in the browser) such as pages files and building blocks (components) It also contains icons and imagesadded to data layer powered by GraphQL.
 
 2.  The **`gatsby-config.js`** is the configuration file for a Gatsby site, where site metadata and Gatsby plugins are specified (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
 
-## How to develop?
+### How to develop?
 1. Fork and clone this repository
 2. In the project directory install dependencies - npm install
 3. Run the app in development mode - gatsby develop
@@ -24,7 +41,7 @@ Responsive static website built with the use of React-based framework [Gatsby.js
 
    Note: There is also a second link: `http://localhost:8000/___graphql`. This is a tool for experimenting with querying data. More information about using this tool you'll find in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
 
-## Learning Gatsby
+### Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
