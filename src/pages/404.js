@@ -14,8 +14,8 @@ const NotFoundPage = () => (
       animate={{ scale: 1 }}
       transition={{
         type: "spring",
-        stiffness: 160,
-        damping: 30,
+        stiffness: 260,
+        damping: 20,
       }}
     />
     <h1>Błąd 404</h1>

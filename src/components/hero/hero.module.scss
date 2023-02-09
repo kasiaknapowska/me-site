@@ -1,28 +1,22 @@
 @import "../../scss/variables";
 
-// @keyframes fadeIn {
-//   from {
-//     opacity: 0;
-//   }
-//   to {
-//     opacity: 1;
-//   }
-// }
-
 .heroContainer {
   width: 100%;
   position: relative;
   .imgContainer {
     position: relative;
+    overflow: hidden;
   }
   .heroImg {
     width: 100%;
     height: 50vh;
-   
+    
+ .img {
+  height: 100%;
+  width: 100%;
+ }
   }
-// .fadeImg {
-//   animation: fadeIn 1s;
-// }
+
   .heroTextContainer {
     padding-top: $space6;
     padding-bottom: $space5;
