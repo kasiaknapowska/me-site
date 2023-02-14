@@ -58,5 +58,5 @@ const OsoczeBogatoplytkowe = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Osocze bogatopłytkowe" />
+export const Head = () => <Seo title="Osocze bogatopłytkowe" description="Mezoterapia osoczem bogatym w komórki macierzyste, pozyskiwanym z krwi Pacjenta, to jedna z najskuteczniejszych metod odmłodzenia i regeneracji skóry, spłycenia zmarszczek i poprawy gęstości włosów."/>
 export default OsoczeBogatoplytkowe

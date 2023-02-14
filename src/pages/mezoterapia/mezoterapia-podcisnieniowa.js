@@ -80,5 +80,5 @@ const MezoterapiaPodcisnieniowa = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Mezoterapia podciśnieniowa" />
+export const Head = () => <Seo title="Mezoterapia podciśnieniowa" description="Specjalistyczne urządzenie zwiększa efektywność zabiegu poprzez zwiększenie liczby iniekcji, równomierne rozprowadzanie preparatu w skórze i kontrolę głębokości nakłuć."/>
 export default MezoterapiaPodcisnieniowa

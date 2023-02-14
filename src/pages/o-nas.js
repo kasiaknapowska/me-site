@@ -62,5 +62,5 @@ export const pageQuery = graphql`
     }
   }
 `
-export const Head = () => <Seo title="Gabinet medycyny estetycznej Borczyk" />
+export const Head = () => <Seo title="Gabinet medycyny estetycznej Borczyk" description="Zabiegi odmładzające, redukujące zmarszczki, nawilżające, wyszczuplające sylwetkę w Katowicach."/>
 export default ONas

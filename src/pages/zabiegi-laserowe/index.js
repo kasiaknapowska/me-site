@@ -9,7 +9,7 @@ const cardsInfo = [
   {
     name: "Wygładzanie",
     title: "Wygładzanie skóry",
-    details: "Seria zabiegów laserowych poprawia kondycję skóry, odnawia jej strukturę, wykładza i uelastycznia.",
+    details: "Seria zabiegów laserowych poprawia kondycję skóry, odnawia jej strukturę, wygładza i uelastycznia.",
     url: "laserowe-wygladzanie-skory",
   },
   {
@@ -80,5 +80,5 @@ export const pageQuery = graphql`
 `
 
 
-export const Head = () => <Seo title="Zabiegi laserowe" />
+export const Head = () => <Seo title="Zabiegi laserowe" description="Zapraszamy na zabiegi laserowe o działaniu anti-aging w Katowicach. Zadzwoń do nas 32 606 04 27. Usuwanie blizn, rozstępów, przebarwień, odnowa i ujędrnianie skóry."/>
 export default ZabiegiLaserowe

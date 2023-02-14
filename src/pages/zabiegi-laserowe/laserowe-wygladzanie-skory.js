@@ -41,6 +41,6 @@ const LaseroweWygladzanieSkory = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Laserowe wygładzanie skóry" />
+export const Head = () => <Seo title="Laserowe wygładzanie skóry" description="Seria zabiegów laserowych poprawia kondycję skóry, odnawia jej strukturę, wygładza i uelastycznia."/>
 
 export default LaseroweWygladzanieSkory

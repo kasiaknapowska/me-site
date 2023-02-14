@@ -84,5 +84,5 @@ export const pageQuery = graphql`
   }
 `
 
-export const Head = () => <Seo title="Mezoterapia" />
+export const Head = () => <Seo title="Mezoterapia" description="Mezoterapia wykorzystuje naturalne zdolności organizmu do samoregeneracji. Zabiegi iniekcyjne stymulują naturalną przebudowę skóry dając efekt odmłodzenia i głębokiej rewitalizacji."/>
 export default Mezoterapia

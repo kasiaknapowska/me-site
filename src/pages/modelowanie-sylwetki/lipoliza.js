@@ -67,5 +67,5 @@ const Lipoliza = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Lipoliza iniekcyjna" />
+export const Head = () => <Seo title="Lipoliza iniekcyjna" description="Podczas zabiegu wykonywane są iniekcje preparatu rozpuszczającego tkankę tłuszczową. Dzięki temu uzyskujemy efekt wyszczuplenia uciążliwych i opornych na ćwiczenia partii ciała, bez konieczności przeprowadzania inwazyjnej liposukcji."/>
 export default Lipoliza

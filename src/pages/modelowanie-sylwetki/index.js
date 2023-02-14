@@ -90,5 +90,5 @@ export const pageQuery = graphql`
   }
 `
 
-export const Head = () => <Seo title="Modelowanie sylwetki" />
+export const Head = () => <Seo title="Modelowanie sylwetki" description="Chcesz pozbyć się fałdek i wysmuklić sylwetkę? Oferujemy zabiegi wzmacniające mięśnie i modelujące sylwetkę (elektromagnetyczna stymulacja mięśni, lipoliza iniekcyjna) oraz zapewniamy opiekę dietetyka klinicznego."/>
 export default ModelowanieSylwetki

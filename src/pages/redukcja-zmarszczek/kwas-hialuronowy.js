@@ -61,6 +61,6 @@ const KwasHialuronowy = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Kwas hialuronowy" />
+export const Head = () => <Seo title="Kwas hialuronowy" description="Nowy kompleks na bazie kwasu hialuronowego i peptydu zapobiega formowaniu nowych zmarszczek ekspresyjnych oraz spłyca i powstrzymuje pogłębianie się już obecnych, dając efekt odmładzający. "/>
 
 export default KwasHialuronowy

@@ -68,6 +68,6 @@ export const pageQuery = graphql`
   }
 `
 
-export const Head = () => <Seo title="Redukcja zmarszczek" />
+export const Head = () => <Seo title="Redukcja zmarszczek" description="Chcesz pozbyć się zmarszczek? W naszym gabinecie przeprowadzamy szereg zabiegów redukujących zmarszczki. Rodzaj zabiegu dobierany jest indywidualnie do potrzeb Pacjenta. Korzystamy z preparatów na bazie kwasu hialuronowego, biostymulatorów tkankowych oraz przeciwzmarszczokej toksyny."/>
 
 export default RedukcjaZmarszczek

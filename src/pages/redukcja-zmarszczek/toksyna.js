@@ -57,6 +57,6 @@ const Toksyna = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Toksyna" />
+export const Head = () => <Seo title="Toksyna" description="Toksyna stosowana jest do redukcji głębokich zmarszczek mimicznych twarzy - zmarszczek między brwiami (lwich), zmarszczek poprzecznych czoła, zmarszczek wokół oczu (kurzych łapek) i ust."/>
 
 export default Toksyna

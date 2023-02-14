@@ -65,5 +65,5 @@ const Pelleve = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Zabieg Pelleve" />
+export const Head = () => <Seo title="Zabieg Pelleve" description="Pelleve to innowacyjna procedura wykorzystująca fale radiowe w celu skutecznego napięcia i ujędrnienia skóry. Uzyskasz efekt liftingu i redukcji zmarszczek bez konieczności wykonywania nakłuć!"/>
 export default Pelleve

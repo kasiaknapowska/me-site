@@ -47,5 +47,5 @@ const ElektromagnetycznaStymulacjaMiesni = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Elektromagnetyczna stymulacja mięśni" />
+export const Head = () => <Seo title="Elektromagnetyczna stymulacja mięśni" description="Chcesz wzmocnić mięśnie brzucha i pośladków, a nie masz czasu na regularne ćwiczenia fizyczne? Zapraszamy do naszego gabinetu na zabiegi elektromagnetycznej stymulacji mięśni."/>
 export default ElektromagnetycznaStymulacjaMiesni

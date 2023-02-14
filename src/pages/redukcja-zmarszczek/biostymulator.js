@@ -47,6 +47,6 @@ const Biostymulator = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Biostymulator tkankowy" />
+export const Head = () => <Seo title="Biostymulator tkankowy" description="Stosowany podczas zabiegu preparat bogaty w kwasy nukleinowe stymuluje głęboką odbudowę tkanek uszkodzonych przez procesy starzenia."/>
 
 export default Biostymulator

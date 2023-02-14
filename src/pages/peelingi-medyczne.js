@@ -75,5 +75,5 @@ const PeelingiMedyczne = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Peelingi medyczne" />
+export const Head = () => <Seo title="Peelingi medyczne" description="Usuwanie przebarwień i niedoskonałości skóry, nawilżenie i ujędrnienie bez nakłuwania skóry. Dzięki peelingowi Twoja twarz zyska promienny wygląd."/>
 export default PeelingiMedyczne

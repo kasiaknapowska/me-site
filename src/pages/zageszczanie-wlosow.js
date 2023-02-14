@@ -98,5 +98,5 @@ const ZageszczanieWlosow = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Zagęszczanie włosów" />
+export const Head = () => <Seo title="Zagęszczanie włosów" description="Na podstawie badań poznamy przyczynę wypadania włosów i wdrożymy celowane postępowanie. Za pomocą mikroiniekcji komórek macierzystych zagęścimy Twoje włosy, zwiększymy ich grubość i przyspieszymy wzrost."/>
 export default ZageszczanieWlosow

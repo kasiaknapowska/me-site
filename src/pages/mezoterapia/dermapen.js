@@ -77,5 +77,5 @@ const Dermapen = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="Dermapen - mezoterapia mikroigłowa" />
+export const Head = () => <Seo title="Dermapen - mezoterapia mikroigłowa" description="Mezoterapia igłowa w Katowicach. Skuteczna redukcja zmarszczek, wygładzanie i nawilżanie skóry, usuwanie przebarwień i niedoskonałości. Umów wizytę!"/>
 export default Dermapen

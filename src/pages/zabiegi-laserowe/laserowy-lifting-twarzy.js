@@ -43,6 +43,6 @@ const LaserowyLiftingTwarzy = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Laserowy lifting twarzy" />
+export const Head = () => <Seo title="Laserowy lifting twarzy" description="Laser zwiększa napięcie skóry i stymuluje jej odbudowę jednocześnie poprawiając owal twarzy. Dzięki temu uzyskasz efekt liftingu bez konieczności wykonywania zabiegów chirurgicznych."/>
 
 export default LaserowyLiftingTwarzy

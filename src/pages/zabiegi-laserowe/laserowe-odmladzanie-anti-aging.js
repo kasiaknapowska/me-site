@@ -59,6 +59,6 @@ const LaseroweOdmladzanieAntiAging = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Laserowe odmładzanie anti-aging" />
+export const Head = () => <Seo title="Laserowe odmładzanie anti-aging" description="Terapia laserem frakcyjnym pozwala uzyskać efekt odmłodzenia skóry. Niweluje oznaki starzenia, takie jak wiotkość skóry, przebarwienia, drobne blizny, zmarszczki, utrata gęstości i jędrności skóry."/>
 
 export default LaseroweOdmladzanieAntiAging
