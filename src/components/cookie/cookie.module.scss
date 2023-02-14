@@ -10,7 +10,7 @@
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: $space3;
+  padding: calc($space3 + 1px);
   line-height: 140%;
   flex: 1 0 auto;
   bottom: 0px;
