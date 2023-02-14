@@ -10,9 +10,11 @@ import * as React from "react"
 
 import Header from "../header/header"
 import "./layout.scss"
+import SocialMedia from "../socialMedia/socialMedia"
 import Footer from "../footer/footer"
 import MobileContact from "../mobileContact/mobileContact"
 import ScrollToTop from "../scrollToTop/scrollToTop"
+import Cookie from "../cookie/cookie"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -29,9 +31,11 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
+      <SocialMedia type="side" />
       <MobileContact/>
       <Footer/>
       <ScrollToTop/>
+      <Cookie/>
     </>
   )
 }

@@ -1,0 +1,29 @@
+@import "../../scss/variables";
+.cookieContainer {
+  background: $colorNeutralDark;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: $space3;
+  line-height: 140%;
+  flex: 1 0 auto;
+  bottom: 0px;
+  .cookieContent {
+    flex: 1 0 300px;
+    margin-right: $space4;
+    @media screen and ($mobile) {
+      flex-basis: 200px;
+    }
+  }
+  .cookieButton {
+    background: $colorSecondary;
+    padding: $space2 $space4;
+    margin: $space2 0;
+  }
+}

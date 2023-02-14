@@ -136,11 +136,9 @@ table {
   color: $colorAccent;
   background-color: transparent;
   border: 1px solid $colorAccent;
-  // transition: 0.2s;
+
   &:hover {
-    // background-color: rgba(189, 109, 160, 0.1);
-    // color: $colorSecondary;
-    // border-color: $colorSecondary;
+
     color: white;
     border-color: $colorSecondary;
     background-color: $colorSecondary;
@@ -354,5 +352,10 @@ button {
   }
   a {
     margin-top: $space4;
+  }
+}
+.CookieConsent {
+  div {
+    flex-basis: 200px;
   }
 }

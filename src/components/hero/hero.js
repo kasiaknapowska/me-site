@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { motion, AnimatePresence } from "framer-motion"
 import { heroData } from "../../data/heroData"
-import SocialMedia from "../socialMedia/socialMedia"
+
 import SlidesNav from "../slidesNav/slidesNav"
 import SlidesDots from "../slidesDots/slidesDots"
 import {
@@ -103,7 +103,7 @@ const Hero = () => {
       >
         sprawdź
       </Link>
-      <SocialMedia type="side" />
+      
     </motion.section>
   )
 }
